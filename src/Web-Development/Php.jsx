@@ -1,6 +1,6 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
-import phpImg from "./assets/php.png";
+import phpImg from "./Assets/php.png";
 function Php() {
   return (
     <>

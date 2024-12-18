@@ -1,6 +1,6 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
-import nodeImg from "./assets/node.png";
+import nodeImg from "./Assets/node.png";
 function Node() {
   return (
     <>

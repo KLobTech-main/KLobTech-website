@@ -1,6 +1,6 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
-import reactImg from "./assets/react.png";
+import reactImg from "./Assets/react.png";
 function React() {
   return (
     <>

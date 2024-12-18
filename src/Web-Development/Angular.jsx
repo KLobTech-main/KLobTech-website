@@ -1,6 +1,6 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
-import angularImg from "./assets/angular.png";
+import angularImg from "./Assets/angular.png";
 function Angular() {
   return (
     <>

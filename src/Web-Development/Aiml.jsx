@@ -1,6 +1,6 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
-import aimlImg from "./assets/ai.png";
+import aimlImg from "./Assets/ai.png";
 function Aiml() {
   return (
     <>

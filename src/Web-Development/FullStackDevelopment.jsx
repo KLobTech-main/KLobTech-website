@@ -2,13 +2,13 @@ import Footer from "../Components/Footer";
 import Navbar from "../Nav/Navbar";
 import { Link, Outlet } from "react-router-dom";
 Outlet;
-import reactImg from "./assets/react.png";
-import aiImg from "./assets/ai.png";
-import angularImg from "./assets/angular.png";
-import phpImg from "./assets/php.png";
-import pythonImg from "./assets/python.png";
-import nodeImg from "./assets/node.png";
-import webdevImg from "./assets/webdev.png";
+import reactImg from "./Assets/react.png";
+import aiImg from "./Assets/ai.png";
+import angularImg from "./Assets/angular.png";
+import phpImg from "./Assets/php.png";
+import pythonImg from "./Assets/python.png";
+import nodeImg from "./Assets/node.png";
+import webdevImg from "./Assets/webdev.png";
 
 import "./FullStackDevelopment.css";
 function FullStackDevelopment() {

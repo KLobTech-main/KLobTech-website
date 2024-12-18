@@ -1,6 +1,6 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
-import pythonImg from "./assets/python.png";
+import pythonImg from "./Assets/python.png";
 function Python() {
   return (
     <>
