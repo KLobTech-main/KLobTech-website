@@ -1,0 +1,65 @@
+.mobileFooterContainer {
+  height: 60rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 0.7fr;
+  margin: 0 auto;
+  background-color: #333;
+}
+.mobileFooterTitleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #333333; */
+}
+.mobileFooterTitleArea p {
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.mobileFooterContacteArea {
+  /* background-color: #333333; */
+  display: grid;
+  justify-content: center;
+  flex-flow: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.contactDetails {
+  display: flex;
+  flex-flow: column;
+  /* background-color: purple; */
+  align-items: center;
+  justify-content: center;
+}
+.socialMediaImg {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.socialMediaImg img {
+  height: 5rem;
+}
+.contactAreaSubHeader {
+  font-size: 3rem;
+  font-weight: 400;
+  color: grey;
+}
+.mobileFooterContacteArea a {
+  color: #fff;
+}
+.mobileFooterBottomArea {
+  display: flex;
+  flex-flow: column;
+
+  /* background-color: green; */
+}
+.addressDetails a {
+  text-align: center;
+  color: #fff;
+}
+.footerBottom {
+  background-color: red;
+}

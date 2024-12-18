@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg-color: #fff;
+  /* discord - #5865f2 
+     yellow  - #f8ad34  
+  */
+  --main-text-color: #333;
+  --accent-color: #0dc7ae;
+  /* blue - #007bff
+    green - #6a994e
+     yellow  - #fcc602  
+     red - #e5383b
+     orange - #fb8b24
+     purple  - #9d4edd
+     mint - #0dc7ae
+  */
+  --padding: 16px;
+  --border-radius: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* background-color: #282c34; */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
