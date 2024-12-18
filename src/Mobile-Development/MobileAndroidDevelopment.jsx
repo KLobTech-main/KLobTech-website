@@ -7,7 +7,7 @@ import flutterImg from "./assets/flutter.png";
 import androidImg from "./assets/android.png";
 import appleImg from "./assets/apple.png";
 import mobileIMG from "./assets/mobile.png";
-import Mobilefooter from "../MobileFooter";
+import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 
 import "./MobileAndroidDevelopment.css";
