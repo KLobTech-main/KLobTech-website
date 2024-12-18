@@ -3,7 +3,7 @@ import "./Faq.css";
 import faqImg from "./assets/faq.png";
 import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
-import Logo from "./Components/Logo";
+import Logo from "./Components/logo";
 
 const FAQPage = ({ accentColor = "#0dc7ae" }) => {
   const [activeIndex, setActiveIndex] = useState(null);
