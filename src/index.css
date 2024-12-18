@@ -34,11 +34,10 @@ body {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+  zoom: 80%;
 }
-body {
-  transform: scale(0.8); /* Scale down by 80% */
-  transform-origin: top left; /* Ensure scaling starts from the top-left corner */
-  width: 125%; /* Compensates for the scaling so content isn't cut off */
+@media (max-width: 768px) {
+  zoom: 100%;
 }
 
 @keyframes fadeIn {
