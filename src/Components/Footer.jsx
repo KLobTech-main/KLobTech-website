@@ -65,14 +65,14 @@ function Footer() {
               <li>About us</li>
               <li>Contact us</li>
               <li>Privacy Policy</li>
-              <li>career</li>
-              <a href="/faq">faq</a>
+              <li>Career</li>
+              <a href="/faq">FAQ</a>
             </ul>
           </div>
           <div className="contact">
             <div className="numbers">
               <h2 className="subHeader">Get in touch</h2>
-              <a href="tel:+919024790200">+1234567890</a>
+              <a href="tel:+919024790200">+919024790200</a>
               <a href="mailto:info@klobtech.com?subject=Inquiry&body=Hello, I would like to know more about...">
                 info@klobtech.com
               </a>
