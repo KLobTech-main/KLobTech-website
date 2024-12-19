@@ -1,141 +1,124 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
 import nativeImg from "./assets/android.png";
+import Mobilefooter from "../Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 
 function Native() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
       <Navbar></Navbar>
       <div className="serviceHero">
-        <div
-        // style={{ height: "50rem", width: "50rem", backgroundColor: "red" }}
-        >
-          <img src={nativeImg} alt="" />
+        <div>
+          <img style={{ height: "40rem" }} src={nativeImg} alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            height: "50rem",
-            width: "70rem",
-            // backgroundColor: "red",
-            flexDirection: "column",
-            gap: "3rem",
-            justifyContent: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "4rem" }}>Native Android Development</h1>
-          <p style={{ fontSize: "2.5rem" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum id
-            provident, eligendi repudiandae veritatis harum qui inventore magnam
-            velit blanditiis soluta asperiores repellat praesentium voluptatum
-            ipsam iure natus doloremque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Suscipit, inventore nesciunt, vero incidunt eum
-            ipsum similique autem ut dolorem magnam ad veritatis rerum ullam sed
-            porro laudantium quis. Perferendis, excepturi?
+        <div className="heroInfo">
+          <div className="heroTitleArea">
+            <h1 className="heroTitle">Native Android Development</h1>
+          </div>
+
+          <p className="heroDescription">
+            Unlock the potential of your business with KLobTech’s premier
+            Android app development services. We deliver tailored,
+            high-performance solutions that align with your goals. Whether
+            you're a startup aiming to make an impact or an established
+            enterprise seeking growth, our expert team is here to transform your
+            vision into reality. Join our valued clients who trust us to elevate
+            their brand. Ready to create an innovative Android app that drives
+            success? Your journey starts with KLobTech!
           </p>
         </div>
       </div>
 
-      <div style={{ marginBottom: "55rem" }} className="serviceGridContainer">
-        <div className="gridTitle">
-          <p style={{ fontSize: "5rem", fontWeight: "600" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <div className="mobileServiceGridContainer">
+        <div className="serviceGridTitleContainer">
+          <p className="serviceTitle">
+            Why Choose KLobTech for Flutter Development?
           </p>
         </div>
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>App Strategy Consultation</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Kickstart your app journey with expert guidance. We develop a
+                clear, actionable plan that aligns with your business objectives
+                and market opportunities, ensuring your success from day one.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Custom App Development</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Transform your ideas into reality with bespoke Android app
+                development. Our solutions are designed to provide seamless
+                performance, innovative features, and a superior user
+                experience.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Engaging UI/UX Design</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Create stunning, intuitive designs that captivate users. We
+                focus on user-centric interfaces that offer both style and
+                functionality, ensuring your app stands out in a competitive
+                market.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>App Enhancement Services</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Boost your app’s performance with our upgrade and extension
+                services. We add new features and improve functionality to
+                ensure your app evolves with market trends and user needs.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Seamless App Integration</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Automate processes and improve efficiency by integrating
+                AI-powered features into your Android app. Our seamless
+                integrations enhance functionality and streamline operations
+                effortlessly.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Reliable Support Services</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                At KLobTech, we go beyond development by offering dedicated
+                maintenance and support. Keep your Flutter app running smoothly
+                with regular updates, feature enhancements, and expert
+                assistance.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+
+      {isMobile && <Mobilefooter></Mobilefooter>}
+      {!isMobile && <Footer></Footer>}
     </>
   );
 }

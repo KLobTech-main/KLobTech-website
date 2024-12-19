@@ -1,140 +1,122 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
 import pythonImg from "./Assets/python.png";
+import Mobilefooter from "../Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 function Python() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
       <Navbar></Navbar>
       <div className="serviceHero">
-        <div
-        // style={{ height: "50rem", width: "50rem", backgroundColor: "red" }}
-        >
-          <img src={pythonImg} alt="" />
+        <div>
+          <img style={{ height: "40rem" }} src={pythonImg} alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            height: "50rem",
-            width: "70rem",
-            // backgroundColor: "red",
-            flexDirection: "column",
-            gap: "3rem",
-            justifyContent: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "4rem" }}>Python Development</h1>
-          <p style={{ fontSize: "2.5rem" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum id
-            provident, eligendi repudiandae veritatis harum qui inventore magnam
-            velit blanditiis soluta asperiores repellat praesentium voluptatum
-            ipsam iure natus doloremque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Suscipit, inventore nesciunt, vero incidunt eum
-            ipsum similique autem ut dolorem magnam ad veritatis rerum ullam sed
-            porro laudantium quis. Perferendis, excepturi?
+        <div className="heroInfo">
+          <div className="heroTitleArea">
+            <h1 className="heroTitle">Python Development</h1>
+          </div>
+
+          <p className="heroDescription">
+            KLobTech is your trusted partner for Python web development. Our
+            expert team creates tailored Python solutions, delivering powerful
+            web applications that align with your business needs. Specializing
+            in Django web development, we provide top-quality services that
+            enhance scalability and efficiency. Whether you're a startup or an
+            enterprise, our experienced Python developers are dedicated to
+            ensuring your success. If you're considering outsourcing Django
+            development, you're in the right place.
           </p>
         </div>
       </div>
 
-      <div style={{ marginBottom: "55rem" }} className="serviceGridContainer">
-        <div className="gridTitle">
-          <p style={{ fontSize: "5rem", fontWeight: "600" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <div className="mobileServiceGridContainer">
+        <div className="serviceGridTitleContainer">
+          <p className="serviceTitle">
+            Why Choose KLobTech for Python Development?
           </p>
         </div>
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Custom Python Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                KLobTech specializes in crafting tailored Python applications
+                using core language features and open-source models. Our
+                dynamic, flexible solutions are designed to meet the diverse
+                needs of both web and mobile development.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Python Web Development</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Explore our range of Python web development services, where we
+                create customized websites, cloud applications, and
+                data-intensive solutions. We specialize in building highly
+                functional content management systems and more.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Tailored Python Development</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Leveraging Python's extensive community library, we deliver
+                custom application development solutions that align with your
+                unique business needs and goals.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>CMS Development Services</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                We create user-friendly and highly functional content management
+                systems using advanced Python frameworks like Django, Flask, and
+                Wagtail.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Python Hybrid Programming</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Our team integrates Python with other languages like Java,
+                C/C++, and C# for advanced customizations, enhancing
+                functionality and enabling seamless hybrid programming.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Upgrades & Migration</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Our expert team ensures smooth migration to Python, utilizing
+                frameworks like Django, and helps with upgrading Python
+                applications from version 2 to version 3, ensuring scalability
+                and performance.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+
+      {isMobile && <Mobilefooter></Mobilefooter>}
+      {!isMobile && <Footer></Footer>}
     </>
   );
 }

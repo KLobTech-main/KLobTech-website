@@ -1,140 +1,123 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
 import phpImg from "./Assets/php.png";
+import Mobilefooter from "../Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 function Php() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
       <Navbar></Navbar>
       <div className="serviceHero">
-        <div
-        // style={{ height: "50rem", width: "50rem", backgroundColor: "red" }}
-        >
-          <img src={phpImg} alt="" />
+        <div>
+          <img style={{ height: "40rem" }} src={phpImg} alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            height: "50rem",
-            width: "70rem",
-            // backgroundColor: "red",
-            flexDirection: "column",
-            gap: "3rem",
-            justifyContent: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "4rem" }}>Python Development</h1>
-          <p style={{ fontSize: "2.5rem" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum id
-            provident, eligendi repudiandae veritatis harum qui inventore magnam
-            velit blanditiis soluta asperiores repellat praesentium voluptatum
-            ipsam iure natus doloremque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Suscipit, inventore nesciunt, vero incidunt eum
-            ipsum similique autem ut dolorem magnam ad veritatis rerum ullam sed
-            porro laudantium quis. Perferendis, excepturi?
+        <div className="heroInfo">
+          <div className="heroTitleArea">
+            <h1 className="heroTitle">PHP Development</h1>
+          </div>
+
+          <p className="heroDescription">
+            Welcome to KLobTech, your trusted partner for exceptional PHP
+            development services! Our team excels in creating smart,
+            feature-rich PHP solutions tailored to meet the needs of businesses
+            worldwide. With a focus on scalability and speed, we build
+            high-performance PHP applications that drive success. Count on our
+            expert PHP developers to deliver fully customizable solutions using
+            the latest technologies.
           </p>
         </div>
       </div>
 
-      <div style={{ marginBottom: "55rem" }} className="serviceGridContainer">
-        <div className="gridTitle">
-          <p style={{ fontSize: "5rem", fontWeight: "600" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <div className="mobileServiceGridContainer">
+        <div className="serviceGridTitleContainer">
+          <p className="serviceTitle">
+            Why Choose KLobTech for PHP Development?
           </p>
         </div>
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Custom PHP Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Create dynamic PHP web applications tailored to your business
+                needs. Our experts use frameworks like CakePHP, CodeIgniter,
+                Yii, Zend, Symfony, and Laravel to deliver high-quality,
+                enterprise-grade solutions.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>E-commerce Development</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Build scalable and feature-rich e-commerce platforms with PHP.
+                We offer customized solutions that enhance user experience and
+                align perfectly with your business objectives.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>CMS Development Services</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Specializing in WordPress, Joomla, Magento, and Drupal, we
+                deliver highly customized CMS websites for seamless content
+                management. Our team ensures the final product aligns with your
+                business goals and provides ease of use.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Social Networking Development</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Develop engaging social networking apps with modern PHP
+                technologies. We create collaborative platforms that keep users
+                connected while implementing the latest trends for optimal
+                performance.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>API Integration Services</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Seamlessly integrate third-party APIs into your PHP systems. Our
+                team ensures smooth API connections, enhancing the functionality
+                and scalability of your web solutions.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Custom Web Portals</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                We specialize in creating business-centric web portals,
+                including B2B, B2C, and enterprise solutions. Designed to
+                streamline operations and drive growth, our portals offer
+                tailored solutions for improved customer engagement and
+                collaboration.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+
+      {isMobile && <Mobilefooter></Mobilefooter>}
+      {!isMobile && <Footer></Footer>}
     </>
   );
 }

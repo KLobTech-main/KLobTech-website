@@ -1,140 +1,118 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
 import aimlImg from "./Assets/ai.png";
+import Mobilefooter from "../Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 function Aiml() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
       <Navbar></Navbar>
       <div className="serviceHero">
-        <div
-        // style={{ height: "50rem", width: "50rem", backgroundColor: "red" }}
-        >
-          <img src={aimlImg} alt="" />
+        <div>
+          <img style={{ height: "40rem" }} src={aimlImg} alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            height: "50rem",
-            width: "70rem",
-            // backgroundColor: "red",
-            flexDirection: "column",
-            gap: "3rem",
-            justifyContent: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "4rem" }}>AI/ML Development</h1>
-          <p style={{ fontSize: "2.5rem" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum id
-            provident, eligendi repudiandae veritatis harum qui inventore magnam
-            velit blanditiis soluta asperiores repellat praesentium voluptatum
-            ipsam iure natus doloremque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Suscipit, inventore nesciunt, vero incidunt eum
-            ipsum similique autem ut dolorem magnam ad veritatis rerum ullam sed
-            porro laudantium quis. Perferendis, excepturi?
+        <div className="heroInfo">
+          <div className="heroTitleArea">
+            <h1 className="heroTitle">AI/ML Development</h1>
+          </div>
+
+          <p className="heroDescription">
+            At KLobTech, we harness the power of Artificial Intelligence and
+            Machine Learning (AI/ML) to deliver transformative solutions that
+            drive business innovation. Our expert team specializes in building
+            intelligent systems that learn from data, automate processes, and
+            provide actionable insights. From predictive analytics and natural
+            language processing (NLP) to image recognition and fraud detection,
+            we develop AI-driven applications that enhance user experience.
           </p>
         </div>
       </div>
 
-      <div style={{ marginBottom: "55rem" }} className="serviceGridContainer">
-        <div className="gridTitle">
-          <p style={{ fontSize: "5rem", fontWeight: "600" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <div className="mobileServiceGridContainer">
+        <div className="serviceGridTitleContainer">
+          <p className="serviceTitle">
+            Why Choose KLobTech for AI/ML Development?
           </p>
         </div>
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Predictive Data Analytics</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Leverage data to predict trends and make informed decisions. Our
+                algorithms optimize processes, forecast sales, and manage risks,
+                keeping you ahead in a competitive landscape.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>NLP Services</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Revolutionize user interaction with NLP. We enable chatbots and
+                sentiment analysis, allowing machines to understand and respond
+                to human language for smarter engagement.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Visual Data Recognition</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Enhance applications with AI-driven image and video recognition.
+                Our solutions automate visual data processing, transforming
+                industries like security, healthcare, and retail.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Conversational AI Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Improve customer interactions with AI-powered chatbots and
+                virtual assistants. Automate tasks, offer personalized support,
+                and provide 24/7 service to enhance engagement and efficiency.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Machine Learning Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Unlock the power of your data with tailored machine learning
+                solutions. From deep learning to clustering, we design
+                intelligent systems that drive decision-making and automate
+                processes.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Fraud Detection Systems</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Strengthen security with AI-powered fraud detection. We use
+                advanced algorithms to detect anomalies and safeguard sensitive
+                data, ensuring your business stays protected.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      {isMobile && <Mobilefooter></Mobilefooter>}
+      {!isMobile && <Footer></Footer>}
     </>
   );
 }

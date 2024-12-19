@@ -1,140 +1,122 @@
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
 import appleImg from "./assets/apple.png";
+import Mobilefooter from "../Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 function Ios() {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
       <Navbar></Navbar>
       <div className="serviceHero">
-        <div
-        // style={{ height: "50rem", width: "50rem", backgroundColor: "red" }}
-        >
-          <img src={appleImg} alt="" />
+        <div>
+          <img style={{ height: "40rem" }} src={appleImg} alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            height: "50rem",
-            width: "70rem",
-            // backgroundColor: "red",
-            flexDirection: "column",
-            gap: "3rem",
-            justifyContent: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "4rem" }}>iOS Development</h1>
-          <p style={{ fontSize: "2.5rem" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum id
-            provident, eligendi repudiandae veritatis harum qui inventore magnam
-            velit blanditiis soluta asperiores repellat praesentium voluptatum
-            ipsam iure natus doloremque. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Suscipit, inventore nesciunt, vero incidunt eum
-            ipsum similique autem ut dolorem magnam ad veritatis rerum ullam sed
-            porro laudantium quis. Perferendis, excepturi?
+        <div className="heroInfo">
+          <div className="heroTitleArea">
+            <h1 className="heroTitle">Native Android Development</h1>
+          </div>
+
+          <p className="heroDescription">
+            Choose KLobTech for top-tier iOS app development services. We
+            specialize in building apps for iPhone, iPad, Apple TV, and Apple
+            Watch. With our expertise, we deliver high-performance, user-centric
+            iOS applications designed to make an impact across various Apple
+            devices. Ready to elevate your business with custom Apple app
+            development solutions? Let’s make it happen together!
           </p>
         </div>
       </div>
 
-      <div style={{ marginBottom: "55rem" }} className="serviceGridContainer">
-        <div className="gridTitle">
-          <p style={{ fontSize: "5rem", fontWeight: "600" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <div className="mobileServiceGridContainer">
+        <div className="serviceGridTitleContainer">
+          <p className="serviceTitle">
+            Why Choose KLobTech for iOS Development?
           </p>
         </div>
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Custom iOS Development</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                KLobTech understands that your business is unique, and so are
+                your app needs. Our expert iOS developers create personalized
+                solutions designed to connect with your audience and achieve
+                your specific goals.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Advanced iOS Integration</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Integrate the latest technologies into your app. Our developers
+                bring in AI, AR/VR, and other modern features to elevate your
+                iOS app’s functionality, making it more engaging and
+                future-ready.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>iPhone App Support</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Our iOS app support services ensure your app remains
+                top-performing. KLobTech provides reliable maintenance, updates,
+                and continuous optimization to keep your app running smoothly
+                across all devices.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>iOS Solutions for Enterprises</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Unlock powerful, custom iOS solutions for your enterprise.
+                KLobTech offers apps that integrate machine learning and
+                cutting-edge technology to improve data analysis and streamline
+                business operations.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>App Upgrade & Extension</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Stay up-to-date with every new iOS update. KLobTech offers
+                seamless upgrade and extension services that enhance your app’s
+                capabilities and ensure it delivers the latest features.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Lorem ipsum dolor
-              </p>{" "}
+              <p>Effortless App Integration</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p style={{ fontSize: "2rem" }}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                deserunt voluptatem esse ipsum sequi, veniam saepe asperiores
-                praesentium quibusdam nobis culpa, qui minima excepturi. Dolor
-                incidunt quas labore amet fugiat?
+              <p className="appServiceDescription">
+                Maximize your app’s impact by seamlessly integrating it with
+                your existing business systems. KLobTech ensures a smooth iOS
+                app integration for faster growth, better functionality, and a
+                broader reach.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+
+      {isMobile && <Mobilefooter></Mobilefooter>}
+      {!isMobile && <Footer></Footer>}
     </>
   );
 }

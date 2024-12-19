@@ -33,25 +33,25 @@ function Footer() {
   return (
     <>
       <motion.div
-        initial={{ y: "100%" }} // Start completely off-screen
-        animate={{
-          y: showFooter ? "0%" : "100%",
-          // marginTop: showFooter ? "10rem" : "5rem",
-        }} // Animate into view when true
-        transition={{ type: "spring", stiffness: 420, damping: 50 }}
-        style={{
-          position: "fixed",
-          bottom: "0",
-          // marginTop: "auto",ffa
-          // left: "2.5%",
-          margin: "0 auto",
-          // width: "95%",
-          backgroundColor: "#333",
-          color: "#fff",
-          // textAlign: "center",
-          padding: "20px 0",
-          boxShadow: "0 -5px 10px rgba(0, 0, 0, 0.2)",
-        }}
+        // initial={{ y: "100%" }} // Start completely off-screen
+        // animate={{
+        //   y: showFooter ? "0%" : "100%",
+        //   // marginTop: showFooter ? "10rem" : "5rem",
+        // }} // Animate into view when true
+        // transition={{ type: "spring", stiffness: 420, damping: 50 }}
+        // style={{
+        //   position: "fixed",
+        //   bottom: "0",
+        //   // marginTop: "auto",ffa
+        //   // left: "2.5%",
+        //   margin: "0 auto",
+        //   // width: "95%",
+        //   backgroundColor: "#333",
+        //   color: "#fff",
+        //   // textAlign: "center",
+        //   padding: "20px 0",
+        //   boxShadow: "0 -5px 10px rgba(0, 0, 0, 0.2)",
+        // }}
         id="footer"
         className="footerContainer"
       >
