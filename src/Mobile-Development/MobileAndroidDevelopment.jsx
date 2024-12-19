@@ -10,7 +10,7 @@ import mobileIMG from "./assets/mobile.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 
-import "./MobileAndroidDevelopment.css";
+import "../index.css";
 function Mad() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
