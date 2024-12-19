@@ -10,7 +10,7 @@ import mobileIMG from "./assets/mobile.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 
-import "../index.css";
+import "../webIndex.css";
 function Mad() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
@@ -198,7 +198,7 @@ function Mad() {
           </div> */}
         </div>
       </div>
-      <div className="imageGridContainer">
+      <div className="mobileImageGridContainer">
         <div className="gridTitleArea">
           <p className="mobileGridTitle">
             We Specialize in the Following Technologies

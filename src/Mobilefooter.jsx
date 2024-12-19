@@ -47,7 +47,10 @@ function Mobilefooter() {
             </a>
           </div>
         </div>
-        <div className="footerBottom"></div>
+        <div className="mobileFooterBottom">
+          <p>© 2018-2024 KLobTech Pvt Ltd.All Rights Reserved</p>
+          <a href="#">Terms and Conditions</a>
+        </div>
       </div>
     </>
   );

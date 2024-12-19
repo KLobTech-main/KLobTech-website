@@ -2,7 +2,7 @@
   height: 60rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 0.7fr;
+  grid-template-rows: 1fr 2fr 1.3fr 1fr;
   margin: 0 auto;
   background-color: #333;
 }
@@ -60,6 +60,17 @@
   text-align: center;
   color: #fff;
 }
-.footerBottom {
-  background-color: #333;
+.mobileFooterBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  /* background-color: red; */
+  gap: 2rem;
+}
+.mobileFooterBottom p {
+  color: #fff;
+}
+.mobileFooterBottom a {
+  color: #fff;
 }

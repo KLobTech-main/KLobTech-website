@@ -1,7 +1,7 @@
 .footerContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.4fr;
   width: 95%;
   height: 65vh;
   margin: 0 auto;
@@ -51,6 +51,10 @@
   padding-left: 3rem;
   transition: color ease 500ms;
   cursor: pointer;
+}
+.navigation a {
+  font-size: 3rem;
+  padding-left: 3rem;
 }
 .navigation li:hover {
   font-size: 3rem;
@@ -104,4 +108,13 @@
 }
 #footer a:hover {
   color: #099381;
+}
+.footerBottom {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerBottom p {
+  color: #fff;
 }
