@@ -42,7 +42,7 @@ function Footer() {
         style={{
           position: "fixed",
           bottom: "0",
-          // marginTop: "auto",
+          // marginTop: "auto",ffa
           // left: "2.5%",
           margin: "0 auto",
           // width: "95%",
@@ -72,7 +72,7 @@ function Footer() {
           <div className="contact">
             <div className="numbers">
               <h2 className="subHeader">Get in touch</h2>
-              <a href="tel:+1234567890">+1234567890</a>
+              <a href="tel:+919024790200">+1234567890</a>
               <a href="mailto:info@klobtech.com?subject=Inquiry&body=Hello, I would like to know more about...">
                 info@klobtech.com
               </a>

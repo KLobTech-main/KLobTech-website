@@ -5,7 +5,7 @@ import herocmsImg from "./assets/cms.png";
 import shopifyImg from "./assets/shopify.png";
 import wordpressImg from "./assets/wordpress.png";
 
-import "./Cmservices.css";
+// import "./Cmservices.css";
 function Cms() {
   return (
     <>

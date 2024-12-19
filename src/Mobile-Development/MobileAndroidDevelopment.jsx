@@ -21,7 +21,10 @@ function Mad() {
           <img src={mobileIMG} alt="" />
         </div>
         <div className="heroInfo">
-          <h1 className="heroTitle">Mobile App Development</h1>
+          <div className="heroTitleArea">
+            <h1 className="heroTitle">Mobile App Development</h1>
+          </div>
+
           <p className="heroDescription">
             KLobTech is a trailblazer in mobile app development, offering
             innovative and customized solutions to meet the unique needs of our
@@ -46,7 +49,7 @@ function Mad() {
               <p>Tailored App Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p>
+              <p className="appServiceDescription">
                 At KLobTech, we understand that every business is unique. That’s
                 why we deliver custom mobile apps that align perfectly with your
                 goals, ensuring your app resonates with your brand identity and
@@ -59,7 +62,7 @@ function Mad() {
               <p>Tailored App Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p>
+              <p className="appServiceDescription">
                 At KLobTech, we understand that every business is unique. That’s
                 why we deliver custom mobile apps that align perfectly with your
                 goals, ensuring your app resonates with your brand identity and
@@ -72,7 +75,7 @@ function Mad() {
               <p>Tailored App Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p>
+              <p className="appServiceDescription">
                 At KLobTech, we understand that every business is unique. That’s
                 why we deliver custom mobile apps that align perfectly with your
                 goals, ensuring your app resonates with your brand identity and
@@ -85,7 +88,7 @@ function Mad() {
               <p>Tailored App Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p>
+              <p className="appServiceDescription">
                 At KLobTech, we understand that every business is unique. That’s
                 why we deliver custom mobile apps that align perfectly with your
                 goals, ensuring your app resonates with your brand identity and
@@ -98,7 +101,7 @@ function Mad() {
               <p>Tailored App Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p>
+              <p className="appServiceDescription">
                 At KLobTech, we understand that every business is unique. That’s
                 why we deliver custom mobile apps that align perfectly with your
                 goals, ensuring your app resonates with your brand identity and
@@ -111,7 +114,7 @@ function Mad() {
               <p>Tailored App Solutions</p>
             </div>
             <div className="appServiceDescriptionArea">
-              <p>
+              <p className="appServiceDescription">
                 At KLobTech, we understand that every business is unique. That’s
                 why we deliver custom mobile apps that align perfectly with your
                 goals, ensuring your app resonates with your brand identity and
@@ -202,48 +205,44 @@ function Mad() {
           </p>
         </div>
         <div className="mobileGridArea">
-          <div className="mobileImageService imageService">
-            <div className="imageTitleArea">
+          <div className="mobileImageService">
+            <div className="mobileImageTitleArea">
               <p style={{ fontSize: "3rem", fontWeight: "500" }}>
                 React Native
               </p>{" "}
             </div>
-            <div className="serviceImage">
+            <div className="mobileServiceImage">
               <Link to="/mad/react">
                 <img src={reactImg} alt="" />
               </Link>
             </div>
           </div>
-          <div className="imageService">
-            <div className="imageTitleArea">
+          <div className="mobileImageService">
+            <div className="mobileImageTitleArea">
               <p style={{ fontSize: "3rem", fontWeight: "500" }}>Flutter</p>{" "}
             </div>
-            <div className="serviceImage">
-              <Link to="flutter">
+            <div className="mobileServiceImage">
+              <Link to="/mad/react">
                 <img src={flutterImg} alt="" />
               </Link>
             </div>
           </div>
-          <div className="imageService">
-            <div className="imageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                Native Android
-              </p>{" "}
+          <div className="mobileImageService">
+            <div className="mobileImageTitleArea">
+              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Android</p>{" "}
             </div>
-            <div className="serviceImage">
-              <Link to="/mad/android">
+            <div className="mobileServiceImage">
+              <Link to="/mad/react">
                 <img src={androidImg} alt="" />
               </Link>
             </div>
           </div>
-          <div className="imageService">
-            <div className="imageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                iOS Development
-              </p>{" "}
+          <div className="mobileImageService">
+            <div className="mobileImageTitleArea">
+              <p style={{ fontSize: "3rem", fontWeight: "500" }}>iOS</p>{" "}
             </div>
-            <div className="serviceImage">
-              <Link to="/mad/ios">
+            <div className="mobileServiceImage">
+              <Link to="/mad/react">
                 <img src={appleImg} alt="" />
               </Link>
             </div>
