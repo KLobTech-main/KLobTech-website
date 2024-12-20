@@ -3,10 +3,13 @@ import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import ScrollToTop from "./Components/ScrollToTop";
+
 function Development() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="min-h-[368px] bg-white flex items-center justify-center">
         <div className="text-center space-y-4">
