@@ -68,6 +68,8 @@ function Footer() {
               <p></p>
               <a href="/about">Privacy Policy</a>
               <p></p>
+              <a href="/about">Terms and Conditions</a>
+              <p></p>
               <a href="/about">Career</a>
               <p></p>
               <a href="/faq">FAQ</a>
