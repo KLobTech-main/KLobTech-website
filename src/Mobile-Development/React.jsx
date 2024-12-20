@@ -10,7 +10,7 @@ function React() {
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={reactImg} alt="" />
+          <img src={reactImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
