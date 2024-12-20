@@ -65,8 +65,8 @@ SERVICES
   margin: 0 auto;
   width: 90%;
   height: 80vh;
-  /* background-color: #fbfbfb; */
-  gap: 3rem;
+  background-color: red;
+  gap: 5rem;
   /* margin-bottom: 7rem; */
   border-radius: 3rem;
 }

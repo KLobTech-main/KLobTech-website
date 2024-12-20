@@ -48,7 +48,7 @@ function FullStackDevelopment() {
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>eCommerce Development</p>
+              <p>E-Commerce Development</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">

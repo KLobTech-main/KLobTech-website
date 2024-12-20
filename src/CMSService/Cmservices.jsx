@@ -134,7 +134,7 @@ function Cms() {
           </div>
           <div className="mobileImageService">
             <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Wrodpress</p>{" "}
+              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Wordpress</p>{" "}
             </div>
             <div className="mobileServiceImage">
               <Link to="/cms/wordpress">

@@ -105,7 +105,7 @@ function Home() {
       {/* <CardGrid></CardGrid> */}
       {/* <FAQPage></FAQPage> */}
       {!isMobile && <Footer></Footer>}
-      {/* <BackToTopButton></BackToTopButton> */}
+      <BackToTopButton></BackToTopButton>
       {isMobile && <Mobilefooter></Mobilefooter>}
     </>
   );

@@ -6,6 +6,8 @@ import insta from "./assets/instagram.png";
 import instaccent from "./assets/instagramaccent.png";
 import linked from "./assets/linkedin.png";
 import linkedaccent from "./assets/linkedaccent.png";
+import { Link, Outlet } from "react-router-dom";
+Outlet;
 
 import "./Footer.css";
 function Footer() {
@@ -62,17 +64,17 @@ function Footer() {
         <div className="footerArea">
           <div className="navigation">
             <ul>
-              <a href="/about">About us</a>
+              <Link to="/about">About us</Link>
               <p></p>
-              <a href="/about">Contact us</a>
+              <Link to="/about">Contact us</Link>
               <p></p>
-              <a href="/about">Privacy Policy</a>
+              <Link to="/about">Privacy Policy</Link>
               <p></p>
-              <a href="/about">Terms and Conditions</a>
+              <Link to="/about">Terms and Conditions</Link>
               <p></p>
-              <a href="/about">Career</a>
+              <Link to="/about">Career</Link>
               <p></p>
-              <a href="/faq">FAQ</a>
+              <Link to="/faq">FAQ</Link>
             </ul>
           </div>
           <div className="contact">
