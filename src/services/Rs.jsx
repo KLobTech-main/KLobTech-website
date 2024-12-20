@@ -13,7 +13,7 @@ function Rs() {
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={recruitmentImg} alt="" />
+          <img src={recruitmentImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">

@@ -3,14 +3,16 @@ import Footer from "../Components/Footer";
 import appleImg from "./assets/apple.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Scrolltotop from "../Components/ScrollToTop";
 function Ios() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={appleImg} alt="" />
+          <img src={appleImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
@@ -99,10 +101,12 @@ function Ios() {
               </p>
             </div>
           </div>
+
           <div className="appService">
             <div className="appServiceTitleArea">
               <p>Effortless App Integration</p>
             </div>
+
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
                 Maximize your app’s impact by seamlessly integrating it with

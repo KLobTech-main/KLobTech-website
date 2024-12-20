@@ -124,9 +124,7 @@ function Cms() {
         <div className="mobileGridArea">
           <div className="mobileImageService">
             <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                React Native
-              </p>{" "}
+              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Shopify</p>{" "}
             </div>
             <div className="mobileServiceImage">
               <Link to="/cms/shopify">
@@ -136,7 +134,7 @@ function Cms() {
           </div>
           <div className="mobileImageService">
             <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Flutter</p>{" "}
+              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Wrodpress</p>{" "}
             </div>
             <div className="mobileServiceImage">
               <Link to="/cms/wordpress">

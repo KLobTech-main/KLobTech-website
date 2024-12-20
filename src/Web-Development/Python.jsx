@@ -3,14 +3,16 @@ import Footer from "../Components/Footer";
 import pythonImg from "./Assets/python.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Scrolltotop from "../Components/ScrollToTop";
 function Python() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={pythonImg} alt="" />
+          <img src={pythonImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">

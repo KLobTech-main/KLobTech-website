@@ -12,7 +12,7 @@ function Mobilefooter() {
         <div className="mobileFooterContacteArea">
           <div className="contactDetails">
             <span className="contactAreaSubHeader">Get in Touch</span>
-            <a href="tel:+1234567890">+1234567890</a>
+            <a href="tel:+919024790200">+919024790200</a>
             <a href="mailto:info@klobtech.com?subject=Inquiry&body=Hello, I would like to get in touch with your company.">
               info@klobtech.com
             </a>

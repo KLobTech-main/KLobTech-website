@@ -21,6 +21,25 @@ export const servicesData: ServiceItem[] = [
     ],
   },
   {
+    name: "Digital Marketing",
+    path: "/digitalmarketing",
+    // subItems: [
+    //   { name: "React Development", path: "/mad/react" },
+    //   {
+    //     name: "Flutter Development",
+    //     path: "/mad/flutter",
+    //   },
+    //   {
+    //     name: "Android Development",
+    //     path: "/mad/android",
+    //   },
+    //   {
+    //     name: "iOS Development",
+    //     path: "/mad/ios",
+    //   },
+    // ],
+  },
+  {
     name: "Web Development",
     path: "/fullStackDevelopment",
     subItems: [

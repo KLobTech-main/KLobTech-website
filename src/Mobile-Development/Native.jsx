@@ -3,15 +3,17 @@ import Footer from "../Components/Footer";
 import nativeImg from "./assets/android.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Scrolltotop from "../Components/ScrollToTop";
 
 function Native() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={nativeImg} alt="" />
+          <img src={nativeImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
@@ -34,7 +36,7 @@ function Native() {
       <div className="mobileServiceGridContainer">
         <div className="serviceGridTitleContainer">
           <p className="serviceTitle">
-            Why Choose KLobTech for Flutter Development?
+            Why Choose KLobTech for Native Android Development?
           </p>
         </div>
         <div className="gridArea">
@@ -101,6 +103,7 @@ function Native() {
               </p>
             </div>
           </div>
+
           <div className="appService">
             <div className="appServiceTitleArea">
               <p>Reliable Support Services</p>

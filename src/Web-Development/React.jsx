@@ -3,14 +3,16 @@ import Footer from "../Components/Footer";
 import reactImg from "./Assets/react.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Scrolltotop from "../Components/ScrollToTop";
 function React() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={reactImg} alt="" />
+          <img src={reactImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
@@ -103,6 +105,7 @@ function React() {
               </p>
             </div>
           </div>
+
           <div className="appService">
             <div className="appServiceTitleArea">
               <p>Ongoing Maintenance Support</p>

@@ -3,14 +3,16 @@ import Footer from "../Components/Footer";
 import angularImg from "./Assets/angular.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Scrolltotop from "../Components/ScrollToTop";
 function Angular() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={angularImg} alt="" />
+          <img src={angularImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">

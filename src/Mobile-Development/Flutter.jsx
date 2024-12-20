@@ -3,14 +3,16 @@ import Footer from "../Components/Footer";
 import flutterImg from "./assets/flutter.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Scrolltotop from "../Components/ScrollToTop";
 function Flutter() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={flutterImg} alt="" />
+          <img src={flutterImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
@@ -102,6 +104,7 @@ function Flutter() {
               </p>
             </div>
           </div>
+
           <div className="appService">
             <div className="appServiceTitleArea">
               <p>Reliable Support Services</p>

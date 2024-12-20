@@ -27,7 +27,7 @@
 }
 @media (max-width: 768px) {
   .hero-container {
-    height: 65rem; /* Adjust height for smaller screens */
+    height: 46rem; /* Adjust height for smaller screens */
     width: 100%; /* Full width */
     margin-top: 1rem;
     padding: 1rem; /* Add some padding for better spacing */

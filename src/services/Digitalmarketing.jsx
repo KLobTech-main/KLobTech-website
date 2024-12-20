@@ -14,7 +14,7 @@ function Digitalmarketing() {
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
-          <img style={{ height: "40rem" }} src={digitalImg} alt="" />
+          <img src={digitalImg} alt="" />
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
@@ -28,9 +28,7 @@ function Digitalmarketing() {
             drive targeted traffic, and maximize conversions. From SEO and
             pay-per-click advertising to social media management and email
             campaigns, we tailor our solutions to meet your unique business
-            goals. Our data-driven approach ensures every campaign is optimized
-            for performance, delivering measurable results that increase brand
-            visibility and ROI.
+            goals.
           </p>
         </div>
       </div>
@@ -106,18 +104,20 @@ function Digitalmarketing() {
               </p>
             </div>
           </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Conversion Rate Optimization</p>
+          {!isMobile && (
+            <div className="appService">
+              <div className="appServiceTitleArea">
+                <p>Conversion Rate Optimization</p>
+              </div>
+              <div className="appServiceDescriptionArea">
+                <p className="appServiceDescription">
+                  Maximize your website's effectiveness with conversion rate
+                  optimization. We analyze user behavior, test strategies, and
+                  make data-driven improvements.
+                </p>
+              </div>
             </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Maximize your website's effectiveness with conversion rate
-                optimization. We analyze user behavior, test strategies, and
-                make data-driven improvements.
-              </p>
-            </div>
-          </div>
+          )}
         </div>
       </div>
 

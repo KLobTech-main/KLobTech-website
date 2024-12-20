@@ -9,12 +9,13 @@ import appleImg from "./assets/apple.png";
 import mobileIMG from "./assets/mobile.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
-
+import Scrolltotop from "../Components/ScrollToTop";
 import "../webIndex.css";
 function Mad() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>
@@ -46,79 +47,73 @@ function Mad() {
         <div className="gridArea">
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>Tailored App Solutions</p>
+              <p>Custom Mobile App Development</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
-                At KLobTech, we understand that every business is unique. That’s
-                why we deliver custom mobile apps that align perfectly with your
-                goals, ensuring your app resonates with your brand identity and
-                audience.
+                We create tailor-made mobile applications for both iOS and
+                Android platforms, designed to meet your unique business needs
+                and deliver exceptional user experiences.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>Tailored App Solutions</p>
+              <p>Cross-Platform App Development</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
-                At KLobTech, we understand that every business is unique. That’s
-                why we deliver custom mobile apps that align perfectly with your
-                goals, ensuring your app resonates with your brand identity and
-                audience.
+                Our expertise in cross-platform development ensures your app
+                works seamlessly across multiple devices, saving time and costs
+                while reaching a wider audience.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>Tailored App Solutions</p>
+              <p>Mobile UI/UX Design</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
-                At KLobTech, we understand that every business is unique. That’s
-                why we deliver custom mobile apps that align perfectly with your
-                goals, ensuring your app resonates with your brand identity and
-                audience.
+                We focus on creating intuitive and visually appealing user
+                interfaces and experiences that engage users and ensure smooth
+                navigation on both iOS and Android apps.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>Tailored App Solutions</p>
+              <p>Mobile App Integration</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
-                At KLobTech, we understand that every business is unique. That’s
-                why we deliver custom mobile apps that align perfectly with your
-                goals, ensuring your app resonates with your brand identity and
-                audience.
+                We integrate third-party APIs and services to enhance your
+                mobile app’s functionality, providing a seamless and
+                feature-rich experience.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>Tailored App Solutions</p>
+              <p>App Maintenance & Support</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
-                At KLobTech, we understand that every business is unique. That’s
-                why we deliver custom mobile apps that align perfectly with your
-                goals, ensuring your app resonates with your brand identity and
-                audience.
+                We provide ongoing support and maintenance for your mobile app,
+                ensuring it remains up-to-date with the latest features,
+                security updates, and bug fixes.
               </p>
             </div>
           </div>
           <div className="appService">
             <div className="appServiceTitleArea">
-              <p>Tailored App Solutions</p>
+              <p>Mobile App Testing & Quality Assurance</p>
             </div>
             <div className="appServiceDescriptionArea">
               <p className="appServiceDescription">
-                At KLobTech, we understand that every business is unique. That’s
-                why we deliver custom mobile apps that align perfectly with your
-                goals, ensuring your app resonates with your brand identity and
-                audience.
+                We perform rigorous testing to ensure your mobile app is
+                bug-free and optimized for performance across a variety of
+                devices, reliable experience for users.
               </p>
             </div>
           </div>
@@ -222,7 +217,7 @@ function Mad() {
               <p style={{ fontSize: "3rem", fontWeight: "500" }}>Flutter</p>{" "}
             </div>
             <div className="mobileServiceImage">
-              <Link to="/mad/react">
+              <Link to="/mad/flutter">
                 <img src={flutterImg} alt="" />
               </Link>
             </div>
@@ -232,7 +227,7 @@ function Mad() {
               <p style={{ fontSize: "3rem", fontWeight: "500" }}>Android</p>{" "}
             </div>
             <div className="mobileServiceImage">
-              <Link to="/mad/react">
+              <Link to="/mad/android">
                 <img src={androidImg} alt="" />
               </Link>
             </div>

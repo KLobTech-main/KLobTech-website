@@ -40,6 +40,7 @@ import Wordpress from "./CMSService/Wordpress";
 import Ecommerce from "./services/Ecommerce";
 import Education from "./services/Education";
 import Digitalmarketing from "./services/Digitalmarketing";
+import Development from "./Development";
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/about" element={<Development />} />
+          <Route path="/contact" element={<Development />} />
 
           <Route path="/emp" element={<Emp />} />
           <Route path="/mad" element={<Mad />} />

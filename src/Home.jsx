@@ -47,7 +47,7 @@ function Home() {
       )}
 
       {isMobile && (
-        <Circle top={"70rem"} left={"20rem"} color={"#333"} scale={0.6} />
+        <Circle top={"52rem"} left={"20rem"} color={"#333"} scale={0.6} />
       )}
 
       {/* <BlurBox></BlurBox> */}
@@ -63,7 +63,7 @@ function Home() {
           distance2={205}
           speed1={9}
           speed2={10}
-          top={"20rem"}
+          top={"10rem"}
           left={"-15rem"}
           color1={"#333"}
           color2={"var(--accent-color)"}

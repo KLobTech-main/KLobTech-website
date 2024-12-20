@@ -62,10 +62,14 @@ function Footer() {
         <div className="footerArea">
           <div className="navigation">
             <ul>
-              <li>About us</li>
-              <li>Contact us</li>
-              <li>Privacy Policy</li>
-              <li>Career</li>
+              <a href="/about">About us</a>
+              <p></p>
+              <a href="/about">Contact us</a>
+              <p></p>
+              <a href="/about">Privacy Policy</a>
+              <p></p>
+              <a href="/about">Career</a>
+              <p></p>
               <a href="/faq">FAQ</a>
             </ul>
           </div>
