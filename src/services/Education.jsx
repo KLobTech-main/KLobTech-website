@@ -39,7 +39,7 @@ function Education() {
       <div className="mobileServiceGridContainer">
         <div className="serviceGridTitleContainer">
           <p className="serviceTitle">
-            Why Choose KLobTech for Ecommerce Services?
+            Why Choose KLobTech for Education Services?
           </p>
         </div>
         <div className="gridArea">
