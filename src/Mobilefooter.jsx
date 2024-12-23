@@ -2,6 +2,7 @@ import "./Mobilefooter.css";
 import x from "./Components/assets/x.png";
 import instagram from "./Components/assets/instagram.png";
 import linkedin from "./Components/assets/linkedin.png";
+import { Link } from "react-router-dom";
 function Mobilefooter() {
   return (
     <>
@@ -45,11 +46,18 @@ function Mobilefooter() {
               Gopalpura Bypass Road, Jaipur, <br />
               Rajasthan, India 302018
             </a>
+            &nbsp;
+            <span className="contactAreaSubHeader">HQ address</span>
+            <a href="https://maps.app.goo.gl/hm96Fzcc7Cm3ByBZ8" target="_blank">
+              H-248c,Riico Ind. Area, <br />
+              Road No. 2. Mansarovar, <br />
+              Jaipur, Rajasthan, India
+            </a>
           </div>
         </div>
         <div className="mobileFooterBottom">
-          <p>© 2018-2024 KLobTech Pvt Ltd.All Rights Reserved</p>
-          <a href="#">Terms and Conditions</a>
+          <p>© 2018-2024 KLobTech. All Rights Reserved</p>
+          <Link to="/tac">Terms and Conditions</Link>
         </div>
       </div>
     </>

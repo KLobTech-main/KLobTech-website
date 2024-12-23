@@ -237,7 +237,7 @@ function Mad() {
               <p style={{ fontSize: "3rem", fontWeight: "500" }}>iOS</p>{" "}
             </div>
             <div className="mobileServiceImage">
-              <Link to="/mad/react">
+              <Link to="/mad/ios">
                 <img src={appleImg} alt="" />
               </Link>
             </div>

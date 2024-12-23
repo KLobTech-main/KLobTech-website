@@ -42,6 +42,7 @@ import Education from "./services/Education";
 import Digitalmarketing from "./services/Digitalmarketing";
 import Development from "./Development";
 import ContactUs from "./ContactUs";
+import Tac from "./tac";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/about" element={<Development />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/tac" element={<Tac />} />
 
           <Route path="/emp" element={<Emp />} />
           <Route path="/mad" element={<Mad />} />

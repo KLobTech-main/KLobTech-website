@@ -16,7 +16,7 @@ function Ios() {
         </div>
         <div className="heroInfo">
           <div className="heroTitleArea">
-            <h1 className="heroTitle">Native Android Development</h1>
+            <h1 className="heroTitle">iOS Development</h1>
           </div>
 
           <p className="heroDescription">

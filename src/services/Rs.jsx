@@ -10,6 +10,7 @@ function Rs() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>

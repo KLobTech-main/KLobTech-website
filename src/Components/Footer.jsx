@@ -70,7 +70,7 @@ function Footer() {
               <p></p>
               <Link to="/about">Privacy Policy</Link>
               <p></p>
-              <Link to="/about">Terms and Conditions</Link>
+              <Link to="/tac">Terms and Conditions</Link>
               <p></p>
               <Link to="/about">Career</Link>
               <p></p>

@@ -7,10 +7,12 @@ import { useMediaQuery } from "react-responsive";
 import Mobilefooter from "../Mobilefooter";
 
 import "./Services.css";
+import { Scroll } from "lucide-react";
 function Ecommerce() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="serviceHero">
         <div>

@@ -4,8 +4,12 @@ import faqImg from "./assets/faq.png";
 import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
 import Logo from "./Components/logo";
+import FAQContact from "./Components/FAQContact";
+import Mobilefooter from "./Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 
 const FAQPage = ({ accentColor = "#0dc7ae" }) => {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const [activeIndex, setActiveIndex] = useState(null);
 
   const getAccentClasses = () => {
@@ -63,7 +67,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
 
   return (
     <>
-      <Logo></Logo>
+      {/* <Logo></Logo> */}
       <Navbar></Navbar>
       <div className="faq-page-container">
         <div className="faq-card">
@@ -99,7 +103,9 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      <FAQContact></FAQContact>
+      {!isMobile && <Footer></Footer>}
+      {isMobile && <Mobilefooter></Mobilefooter>}
     </>
   );
 };

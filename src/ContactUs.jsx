@@ -2,6 +2,7 @@ import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
 import { address } from "framer-motion/client";
+import FAQContact from "./Components/FAQContactQuestion";
 
 function ContactUs() {
   const contactMethods = [
@@ -38,97 +39,9 @@ function ContactUs() {
     },
   ];
   return (
-    // <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-16">
-    //   <div className="max-w-[120rem] mx-auto">
-    //     <div className="text-center mb-32">
-    //       <h1 className="text-5xl font-bold text-gray-800 mb-8">
-    //         Get in Touch
-    //       </h1>
-    //       <p className="text-2xl text-gray-600">
-    //         We'd love to hear from you. Here's how you can reach us.
-    //       </p>
-    //     </div>
-
-    //     <div className="grid md:grid-cols-2 gap-16">
-    //       {/* Contact Information */}
-    //       <div className="backdrop-blur-lg bg-white/30 p-16 rounded-2xl shadow-lg border border-white/20">
-    //         <h2 className="text-2xl font-semibold text-gray-800 mb-16">
-    //           Contact Information
-    //         </h2>
-    //         <div className="space-y-12">
-    //           <div className="flex items-center space-x-8">
-    //             <div className="bg-blue-100 p-6 rounded-full">
-    //               <Mail className="w-8 h-8 text-blue-600" />
-    //             </div>
-    //             <div>
-    //               <p className="text-xl text-gray-600">Email</p>
-    //               <p className="text-xl font-medium text-gray-800">
-    //                 hello@company.com
-    //               </p>
-    //             </div>
-    //           </div>
-
-    //           <div className="flex items-center space-x-8">
-    //             <div className="bg-green-100 p-6 rounded-full">
-    //               <Phone className="w-8 h-8 text-green-600" />
-    //             </div>
-    //             <div>
-    //               <p className="text-xl text-gray-600">Phone</p>
-    //               <p className="text-xl font-medium text-gray-800">
-    //                 +1 (555) 123-4567
-    //               </p>
-    //             </div>
-    //           </div>
-
-    //           <div className="flex items-center space-x-8">
-    //             <div className="bg-purple-100 p-6 rounded-full">
-    //               <MapPin className="w-8 h-8 text-purple-600" />
-    //             </div>
-    //             <div>
-    //               <p className="text-xl text-gray-600">Location</p>
-    //               <p className="text-xl font-medium text-gray-800">
-    //                 123 Business Avenue
-    //               </p>
-    //               <p className="text-xl font-medium text-gray-800">
-    //                 New York, NY 10001
-    //               </p>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-
-    //       {/* Business Hours */}
-    //       <div className="backdrop-blur-lg bg-white/30 p-16 rounded-2xl shadow-lg border border-white/20">
-    //         <h2 className="text-2xl font-semibold text-gray-800 mb-16">
-    //           Business Hours
-    //         </h2>
-    //         <div className="flex items-start space-x-8">
-    //           <div className="bg-orange-100 p-6 rounded-full">
-    //             <Clock className="w-8 h-8 text-orange-600" />
-    //           </div>
-    //           <div className="space-y-6">
-    //             <div>
-    //               <p className="text-xl font-medium text-gray-800">
-    //                 Monday - Friday
-    //               </p>
-    //               <p className="text-xl text-gray-600">9:00 AM - 6:00 PM</p>
-    //             </div>
-    //             <div>
-    //               <p className="text-xl font-medium text-gray-800">Saturday</p>
-    //               <p className="text-xl text-gray-600">10:00 AM - 4:00 PM</p>
-    //             </div>
-    //             <div>
-    //               <p className="text-xl font-medium text-gray-800">Sunday</p>
-    //               <p className="text-xl text-gray-600">Closed</p>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <>
       <Navbar></Navbar>
+
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-16 lg:p-40">
         <main className="max-w-[100rem] mx-auto">
           <div className="flex flex-col items-center justify-center text-center mb-24">
@@ -184,6 +97,7 @@ function ContactUs() {
           </div> */}
         </main>
       </div>
+      <FAQContact></FAQContact>
     </>
   );
 }

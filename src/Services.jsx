@@ -20,228 +20,247 @@ function Services() {
           <span className="secondaryTitle">But are not limited to</span>
         </div>
         <div className="serviceArea">
-          <div className="service service1">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">
-                Mobile App Development
-              </p>
-              <div className="iconArea">
-                <img src={mobileImg} alt="" />
+          <Link to="/mad">
+            <div className="service service1">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="/mad"
-                className="learnService"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-          <div className="service service2">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="web.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">
-                Full Stack Development
-              </p>
-              <div className="iconArea">
-                <img src={webdevImg} alt="" />
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">
+                  Mobile App Development
+                </p>
+                <div className="iconArea">
+                  <img src={mobileImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/mad"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="/fullStackDevelopment"
-                className="learnService"
-              >
-                Learn More
-              </Link>
             </div>
-          </div>
-          <div className="service service3">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle unevenCardTitles">
-                Digital Marketing
-              </p>
-              <div className="iconArea">
-                <img src="digital.png" alt="" />
+          </Link>
+          <Link to="/fullStackDevelopment">
+            <div className="service service2">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="web.png" alt="" />
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="/digitalmarketing"
-                className="learnService"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-          <div className="service service4">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">CMS Services</p>
-              <div className="iconArea">
-                <img src={cmsImg} alt="" />
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">
+                  Full Stack Development
+                </p>
+                <div className="iconArea">
+                  <img src={webdevImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/fullStackDevelopment"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
               </div>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./cms"
-                className="learnService"
-              >
-                Learn More
-              </a>
             </div>
-          </div>
-          <div className="service service5">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">B2B Services</p>
-              <div className="iconArea">
-                <img src={btbsImg} alt="" />
+          </Link>
+          <Link to="/digitalmarketing">
+            <div className="service service3">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="./btbs"
-                className="learnService"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-          <div className="service service6">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">Recruitment Services</p>
-              <div className="iconArea">
-                <img src={recruitImg} alt="" />
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle unevenCardTitles">
+                  Digital Marketing
+                </p>
+                <div className="iconArea">
+                  <img src="digital.png" alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/digitalmarketing"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="/recruitment"
-                className="learnService"
-              >
-                Learn More
-              </Link>
             </div>
-          </div>
-          <div className="service service7">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">Ecommerce</p>
-              <div className="iconArea">
-                <img src={ecommerceImg} alt="" />
+          </Link>
+          <Link to="/cms">
+            <div className="service service4">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="./ecommerce"
-                className="learnService"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-          <div className="service service8">
-            <div style={{ opacity: "0" }} className="iconArea">
-              <img src="coding.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="serviceCardTitle cardTitle">Education</p>
-              <div className="iconArea">
-                <img src={educationImg} alt="" />
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">CMS Services</p>
+                <div className="iconArea">
+                  <img src={cmsImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/cms"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
               </div>
-              <Link
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                to="./education"
-                className="learnService"
-              >
-                Learn More
-              </Link>
             </div>
-          </div>
+          </Link>
+          <Link to="/btbs">
+            <div className="service service5">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
+              </div>
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">B2B Services</p>
+                <div className="iconArea">
+                  <img src={btbsImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/btbs"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </Link>
+          <Link to="/recruitment">
+            <div className="service service6">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
+              </div>
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">
+                  Recruitment Services
+                </p>
+                <div className="iconArea">
+                  <img src={recruitImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/recruitment"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </Link>
+          <Link to="/ecommerce">
+            <div className="service service7">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
+              </div>
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">Ecommerce</p>
+                <div className="iconArea">
+                  <img src={ecommerceImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/ecommerce"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </Link>
+          <Link to="/education">
+            <div className="service service8">
+              <div style={{ opacity: "0" }} className="iconArea">
+                <img src="coding.png" alt="" />
+              </div>
+              <div className="nameArea">
+                <p className="serviceCardTitle cardTitle">Education</p>
+                <div className="iconArea">
+                  <img src={educationImg} alt="" />
+                </div>
+                <Link
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "var(--accent-color)",
+                    color: "#fff",
+                    textDecoration: "none",
+                    borderRadius: "2rem",
+                    border: "none",
+                  }}
+                  to="/education"
+                  className="learnService"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </Link>
+
           {/* <div className="service service2">
             <div className="iconArea">
               <img src="web.png" alt="" />
