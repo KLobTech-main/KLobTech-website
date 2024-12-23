@@ -15,7 +15,7 @@ function Development() {
         <div className="text-center space-y-4">
           <Construction className="w-12 h-12 text-gray-600 mx-auto" />
           <h1 className="text-2xl font-semibold text-gray-800">
-            Under Development
+            Under Maintenance
           </h1>
           <p className="text-gray-600">
             We're making improvements. Please check back soon!

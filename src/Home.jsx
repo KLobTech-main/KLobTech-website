@@ -22,6 +22,7 @@ import Review from "./Review";
 import ReviewCarousel from "./ReviewCarousel";
 import Logo from "./Components/logo";
 import Mobilefooter from "./Mobilefooter";
+import ServicesShowcase from "./ServicesShowcase";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -107,6 +108,7 @@ function Home() {
       {!isMobile && <Footer></Footer>}
       <BackToTopButton></BackToTopButton>
       {isMobile && <Mobilefooter></Mobilefooter>}
+      {/* <ServicesShowcase></ServicesShowcase> */}
     </>
   );
 }

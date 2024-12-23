@@ -18,11 +18,13 @@ function Information() {
           </h1> */}
           <h1>
             <span style={{ color: "var(--accent-color)" }}>KLob</span>Tech
-            provides high-quality B2B market research, verified contact data,
-            and actionable insights, while also offering full-stack and mobile
-            Flutter development through our dedicated IT team. Additionally, our
-            recruitment services help businesses find top talent, ensuring the
-            right fit for their unique needs.
+            KLobTech stands at the forefront of technological innovation, driven
+            by a highly skilled and dedicated IT team. We specialize in
+            full-stack development and mobile app solutions to craft seamless,
+            high-performance applications. Our commitment to cutting-edge
+            technology and precision ensures transformative digital solutions
+            tailored to your unique needs. In addition, we provide high-quality
+            B2B market research, verified contact data, and actionable insights,
           </h1>
           <h1
             style={{

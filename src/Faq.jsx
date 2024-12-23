@@ -21,34 +21,37 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
 
   const faqs = [
     {
-      question: "What is your return policy?",
+      question:
+        "What services does KLobTech offer in mobile and web development?",
       answer:
-        "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "We specialize in delivering high-quality, secure, and cost-effective mobile and web app development services, ensuring user-friendly solutions tailored to businesses worldwide.",
     },
     {
-      question: "What is your return policy?",
+      question:
+        "What makes KLobTech a reliable choice for web and app development?",
       answer:
-        "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
+        "Our dedication to precision, innovation, and quality, along with a team of skilled professionals, ensures customized solutions aligned with your business goals. We maintain open communication to foster transparency and trust.",
     },
     {
-      question: "How long does shipping take?",
+      question: "What is KLobTech’s vision and mission?",
       answer:
-        "3-5 business days for standard shipping within the continental US.",
+        "Our vision is to be your key to success by providing top-notch software and web services with a focus on quality, efficiency, and timely delivery. Our mission is to exceed your expectations by empowering our team to deliver superior performance and accelerate your business's growth.",
     },
     {
-      question: "Do you offer international shipping?",
+      question: "What industries or platforms does KLobTech specialize in?",
       answer:
-        "Yes, we ship worldwide with varying rates and potential customs fees.",
+        "Since 2021, we have worked on platforms like Python, UI/UX design, and graphic designing, constantly enhancing our expertise to deliver exceptional solutions.",
     },
     {
-      question: "What payment methods do you accept?",
+      question:
+        "How does KLobTech ensure ethical work practices and client satisfaction?",
       answer:
-        "We accept major credit cards, PayPal, Apple Pay, Google Pay, and Amazon Pay.",
+        "Our ethical work ethos, built on dignity and respect, fosters strong client relationships and employee development. We prioritize delivering results that elevate your business while maintaining integrity.",
     },
     {
-      question: "Are your products eco-friendly?",
+      question: "What opportunities does KLobTech provide for career growth?",
       answer:
-        "Committed to sustainability, using recycled materials and minimal packaging.",
+        "We empower careers by offering dynamic job opportunities and fostering an environment of growth for professionals seeking to thrive in the IT industry.",
     },
   ];
 
