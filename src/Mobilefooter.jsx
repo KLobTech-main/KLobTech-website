@@ -46,7 +46,7 @@ function Mobilefooter() {
               Gopalpura Bypass Road, Jaipur, <br />
               Rajasthan, India 302018
             </a>
-            &nbsp;
+
             <span className="contactAreaSubHeader">HQ address</span>
             <a href="https://maps.app.goo.gl/hm96Fzcc7Cm3ByBZ8" target="_blank">
               H-248c,Riico Ind. Area, <br />

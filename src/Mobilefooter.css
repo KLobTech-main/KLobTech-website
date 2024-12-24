@@ -1,5 +1,5 @@
 .mobileFooterContainer {
-  height: 60rem;
+  max-height: 65rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr 1.3fr 1fr;
@@ -47,6 +47,9 @@
   font-weight: 400;
   color: grey;
 }
+.contactAreaSubHeader a {
+  background-color: red;
+}
 .mobileFooterContacteArea a {
   color: #fff;
 }
@@ -59,6 +62,7 @@
 .addressDetails a {
   text-align: center;
   color: #fff;
+  margin-bottom: 2rem;
 }
 .mobileFooterBottom {
   display: flex;
@@ -67,6 +71,7 @@
   flex-flow: column;
   /* background-color: red; */
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 .mobileFooterBottom p {
   color: #fff;

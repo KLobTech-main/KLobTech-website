@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 
-const FAQContact = () => {
+const FAQContactQuestion = () => {
   const [question, setQuestion] = useState("");
-  const companyEmail = "support@yourcompany.com"; // Replace with your company email
+  const companyEmail = "info@klobtech.com"; // Replace with your company email
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const encodedQuestion = encodeURIComponent(question);
     window.location.href = `mailto:${companyEmail}?subject=FAQ Question&body=${encodedQuestion}`;
+    setQuestion(""); // Clear the textbox
   };
 
   return (
-    <div className="w-full bg-white p-12 flex justify-center align-center">
+    <div className="w-full bg-white p-12 shadow-xl">
       <div className="max-w-5xl mx-auto">
         <div className="mb-16">
           <h2 className="text-6xl font-bold text-center text-gray-800">
@@ -34,7 +35,7 @@ const FAQContact = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-[#25ccb6] text-white px-12 py-8 rounded-2xl text-3xl font-medium flex items-center justify-center gap-4 hover:bg-blue-700 transition-all duration-200 hover:scale-105"
+              className="bg-[#25ccb6] text-white px-12 py-8 rounded-2xl text-3xl font-medium flex items-center justify-center gap-4 hover:bg-[#099381] transition-all duration-200 hover:scale-105"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,4 +60,6 @@ const FAQContact = () => {
   );
 };
 
-export default FAQContact;
+export default FAQContactQuestion;
+
+// Contact us and let’s work together for success!

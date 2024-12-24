@@ -122,26 +122,31 @@ function Cms() {
           </p>
         </div>
         <div className="mobileGridArea">
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Shopify</p>{" "}
+          <Link to="/cms/shopify">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>Shopify</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/cms/shopify">
+                  <img src={shopifyImg} alt="" />
+                </Link>
+              </div>
             </div>
-            <div className="mobileServiceImage">
-              <Link to="/cms/shopify">
-                <img src={shopifyImg} alt="" />
-              </Link>
+          </Link>
+
+          <Link to="/cms/wordpress">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>Wordpress</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/cms/wordpress">
+                  <img src={wordpressImg} alt="" />
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Wordpress</p>{" "}
-            </div>
-            <div className="mobileServiceImage">
-              <Link to="/cms/wordpress">
-                <img src={wordpressImg} alt="" />
-              </Link>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
 

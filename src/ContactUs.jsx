@@ -41,14 +41,46 @@ function ContactUs() {
   return (
     <>
       <Navbar></Navbar>
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-20 lg:p-48">
+        <main className="max-w-[120rem] mx-auto">
+          <div className="flex flex-col items-center justify-center text-center mb-28">
+            <h1 className="text-7xl lg:text-9xl font-bold text-gray-900 mb-10">
+              Get in <span className="text-[#25ccb6]">Touch</span>
+            </h1>
+            <p className="text-4xl text-gray-600 max-w-5xl">
+              Have questions? We'd love to hear from you.
+            </p>
+          </div>
 
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-16 lg:p-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
+            {contactMethods.map((method, index) => (
+              <a href={method.address} target="_blank">
+                <div
+                  key={index}
+                  className="group p-14 rounded-3xl bg-white/80 backdrop-blur-lg border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <div className="bg-blue-50 rounded-2xl p-7 w-fit mb-12 text-[#25ccb6] group-hover:bg-blue-100 transition-colors duration-300">
+                    {method.icon}
+                  </div>
+                  <h2 className="text-4xl font-semibold text-gray-900 mb-5">
+                    {method.title}
+                  </h2>
+                  <a href={method.address} target="_blank">
+                    <p className="text-3xl text-gray-800 font-medium mb-5 whitespace-pre-line hover:text-[#25ccb6]">
+                      {method.content}
+                    </p>
+                  </a>
+                  <p className="text-xl text-gray-500">{method.subtext}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </main>
+      </div>
+
+      {/* <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-16 lg:p-40">
         <main className="max-w-[100rem] mx-auto">
           <div className="flex flex-col items-center justify-center text-center mb-24">
-            {/* <div className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-blue-50 text-blue-700 font-medium text-xl mb-10">
-              <Clock className="w-8 h-8 mr-3" />
-              <span>Available 24/7 for urgent inquiries</span>
-            </div> */}
             <h1 className="text-6xl lg:text-8xl font-bold text-gray-900 mb-8">
               Get in <span className="text-[#25ccb6]">Touch</span>
             </h1>
@@ -79,24 +111,8 @@ function ContactUs() {
               </div>
             ))}
           </div>
-
-          {/* <div className="mt-24 p-20 rounded-3xl bg-white/80 backdrop-blur-lg border border-gray-100 shadow-lg">
-            <div className="max-w-5xl mx-auto text-center">
-              <h2 className="text-5xl font-bold text-gray-900 mb-8">
-                Ready to Take the Next Step?
-              </h2>
-              <p className="text-2xl text-gray-600 mb-12">
-                Our team of experts is ready to provide you with exceptional
-                service and innovative solutions tailored to your needs.
-              </p>
-              <div className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-2xl cursor-pointer group">
-                Schedule a Consultation
-                <ArrowRight className="w-8 h-8 ml-4 group-hover:translate-x-1 transition-transform duration-200" />
-              </div>
-            </div>
-          </div> */}
         </main>
-      </div>
+      </div> */}
       <FAQContact></FAQContact>
     </>
   );

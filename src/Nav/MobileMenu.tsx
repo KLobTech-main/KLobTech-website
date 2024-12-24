@@ -38,6 +38,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         >
           About
         </Link>
+        <Link
+          to="/faq"
+          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-150"
+        >
+          FAQ
+        </Link>
 
         {/* Services menu button */}
         <div>

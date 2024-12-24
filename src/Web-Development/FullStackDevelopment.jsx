@@ -130,66 +130,85 @@ function FullStackDevelopment() {
           </p>
         </div>
         <div className="extraMobileGridArea">
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>React JS</p>{" "}
+          <Link to="/fullStackDevelopment/react">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>React JS</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/fullStackDevelopment/react">
+                  <img src={reactImg} alt="" />
+                </Link>
+              </div>
             </div>
-            <div className="mobileServiceImage">
-              <Link to="/fullStackDevelopment/react">
-                <img src={reactImg} alt="" />
-              </Link>
+          </Link>
+
+          <Link to="/fullStackDevelopment/aiml">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>AI/ML</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/fullStackDevelopment/aiml">
+                  <img src={aiImg} alt="" />
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>AI/ML</p>{" "}
+          </Link>
+
+          <Link to="/fullStackDevelopment/node">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>Node JS</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/fullStackDevelopment/node">
+                  <img src={nodeImg} alt="" />
+                </Link>
+              </div>
             </div>
-            <div className="mobileServiceImage">
-              <Link to="/fullStackDevelopment/aiml">
-                <img src={aiImg} alt="" />
-              </Link>
+          </Link>
+
+          <Link to="/fullStackDevelopment/angular">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>
+                  Angular JS
+                </p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/fullStackDevelopment/angular">
+                  <img src={angularImg} alt="" />
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Node JS</p>{" "}
+          </Link>
+
+          <Link to="/fullStackDevelopment/python">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>Python</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/fullStackDevelopment/python">
+                  <img src={pythonImg} alt="" />
+                </Link>
+              </div>
             </div>
-            <div className="mobileServiceImage">
-              <Link to="/fullStackDevelopment/node">
-                <img src={nodeImg} alt="" />
-              </Link>
+          </Link>
+
+          <Link to="/fullStackDevelopment/php">
+            <div className="mobileImageService">
+              <div className="mobileImageTitleArea">
+                <p style={{ fontSize: "3rem", fontWeight: "500" }}>PHP</p>{" "}
+              </div>
+              <div className="mobileServiceImage">
+                <Link to="/fullStackDevelopment/php">
+                  <img src={phpImg} alt="" />
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Angular JS</p>{" "}
-            </div>
-            <div className="mobileServiceImage">
-              <Link to="/fullStackDevelopment/angular">
-                <img src={angularImg} alt="" />
-              </Link>
-            </div>
-          </div>
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>Python</p>{" "}
-            </div>
-            <div className="mobileServiceImage">
-              <Link to="/fullStackDevelopment/python">
-                <img src={pythonImg} alt="" />
-              </Link>
-            </div>
-          </div>
-          <div className="mobileImageService">
-            <div className="mobileImageTitleArea">
-              <p style={{ fontSize: "3rem", fontWeight: "500" }}>PHP</p>{" "}
-            </div>
-            <div className="mobileServiceImage">
-              <Link to="/fullStackDevelopment/php">
-                <img src={phpImg} alt="" />
-              </Link>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
       {isMobile && <Mobilefooter></Mobilefooter>}

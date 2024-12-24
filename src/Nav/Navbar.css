@@ -30,7 +30,12 @@
   -webkit-backdrop-filter: blur(35px);
   width: 80rem;
 }
-
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: right;
+    padding-right: 5rem;
+  }
+}
 .navbar-content {
   display: flex;
   justify-content: center;
