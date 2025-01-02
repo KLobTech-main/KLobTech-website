@@ -44,13 +44,16 @@ const BackToTopButton = () => {
   };
 
   return (
-    <button
-      style={buttonStyle}
-      onClick={scrollToTop}
-      aria-label="Scroll to top"
-    >
-      ▲ {/* Unicode arrow-up symbol */}
-    </button>
+    <a href="#">
+      {" "}
+      <button
+        style={buttonStyle}
+        // onClick={scrollToTop}
+        aria-label="Scroll to top"
+      >
+        ▲ {/* Unicode arrow-up symbol */}
+      </button>
+    </a>
   );
 };
 

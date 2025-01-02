@@ -4,10 +4,13 @@ import wordpressImg from "./assets/wordpress.png";
 import ScrollToTop from "../Components/ScrollToTop";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Logo from "../Components/logo";
+
 function Wordpress() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="serviceHero">

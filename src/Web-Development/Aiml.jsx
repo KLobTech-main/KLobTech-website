@@ -4,10 +4,15 @@ import aimlImg from "./Assets/ai.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import Scrolltotop from "../Components/ScrollToTop";
+import Logo from "../Components/logo";
+import BackToTopButton from "../BackToTopButton";
+
 function Aiml() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <BackToTopButton></BackToTopButton>
+      {!isMobile && <Logo></Logo>}
       <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">

@@ -69,6 +69,7 @@ SERVICES
   gap: 5rem;
   /* margin-bottom: 7rem; */
   border-radius: 3rem;
+  margin-top: 5rem;
 }
 .serviceHero img {
   height: 40rem;

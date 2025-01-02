@@ -3,6 +3,8 @@ import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
 import { address } from "framer-motion/client";
 import FAQContact from "./Components/FAQContactQuestion";
+import ScrollToTop from "./Components/ScrollToTop";
+import BackToTopButton from "./BackToTopButton";
 
 function ContactUs() {
   const contactMethods = [
@@ -40,6 +42,8 @@ function ContactUs() {
   ];
   return (
     <>
+      <BackToTopButton></BackToTopButton>
+      <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-20 lg:p-48">
         <main className="max-w-[120rem] mx-auto">

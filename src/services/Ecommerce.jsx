@@ -5,6 +5,7 @@ import ecommerceImg from "./assets/ecommerce.png";
 import ScrollToTop from "../Components/ScrollToTop";
 import { useMediaQuery } from "react-responsive";
 import Mobilefooter from "../Mobilefooter";
+import Logo from "../Components/logo";
 
 import "./Services.css";
 import { Scroll } from "lucide-react";
@@ -12,6 +13,7 @@ function Ecommerce() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="serviceHero">

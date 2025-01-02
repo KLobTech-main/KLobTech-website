@@ -43,6 +43,8 @@ import Digitalmarketing from "./digitalmarketing/Digitalmarketing";
 import Development from "./Development";
 import ContactUs from "./ContactUs";
 import Tac from "./tac";
+import Career from "./Career/Career";
+import AboutUs from "./AboutUs";
 
 function App() {
   return (
@@ -52,9 +54,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/faq" element={<FAQPage />} />
-          <Route path="/about" element={<Development />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/tac" element={<Tac />} />
+          <Route path="/career" element={<Career />} />
 
           <Route path="/emp" element={<Emp />} />
           <Route path="/mad" element={<Mad />} />

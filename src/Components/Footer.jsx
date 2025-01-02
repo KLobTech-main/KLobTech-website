@@ -66,13 +66,13 @@ function Footer() {
             <ul>
               <Link to="/about">About us</Link>
               <p></p>
-              <Link to="/about">Contact us</Link>
+              <Link to="/contact">Contact us</Link>
               <p></p>
               <Link to="/about">Privacy Policy</Link>
               <p></p>
               <Link to="/tac">Terms and Conditions</Link>
               <p></p>
-              <Link to="/about">Career</Link>
+              <Link to="/career">Career</Link>
               <p></p>
               <Link to="/faq">FAQ</Link>
             </ul>
@@ -80,7 +80,7 @@ function Footer() {
           <div className="contact">
             <div className="numbers">
               <h2 className="subHeader">Get in touch</h2>
-              <a href="tel:+919024790200">+919024790200</a>
+              <a href="tel:+919024790200">+91-9024790200</a>
               <a href="mailto:info@klobtech.com?subject=Inquiry&body=Hello, I would like to know more about...">
                 info@klobtech.com
               </a>

@@ -5,12 +5,14 @@ import educationImg from "./assets/education.png";
 import ScrollToTop from "../Components/ScrollToTop";
 import { useMediaQuery } from "react-responsive";
 import Mobilefooter from "../Mobilefooter";
+import Logo from "../Components/logo";
 
 import "./Services.css";
 function Education() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="serviceHero">

@@ -7,6 +7,7 @@ import Logo from "./Components/logo";
 import FAQContact from "./Components/FAQContact";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import BackToTopButton from "./BackToTopButton";
 
 const FAQPage = ({ accentColor = "#0dc7ae" }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -67,6 +68,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
 
   return (
     <>
+      <BackToTopButton></BackToTopButton>
       {/* <Logo></Logo> */}
       <Navbar></Navbar>
       <div className="faq-page-container">

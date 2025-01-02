@@ -4,11 +4,13 @@ import Navbar from "./Nav/Navbar";
 import ScrollToTop from "./Components/ScrollToTop";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import BackToTopButton from "./BackToTopButton";
 
 function tac() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <BackToTopButton></BackToTopButton>
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="min-h-screen bg-gray-50">

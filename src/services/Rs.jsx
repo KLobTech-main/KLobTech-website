@@ -6,10 +6,13 @@ import ScrollToTop from "../Components/ScrollToTop";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import "./Services.css";
+import Logo from "../Components/logo";
+
 function Rs() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>
       <div className="serviceHero">

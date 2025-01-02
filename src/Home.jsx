@@ -23,6 +23,7 @@ import ReviewCarousel from "./ReviewCarousel";
 import Logo from "./Components/logo";
 import Mobilefooter from "./Mobilefooter";
 import ServicesShowcase from "./ServicesShowcase";
+import Navvv from "./NewNav";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -53,6 +54,7 @@ function Home() {
 
       {/* <BlurBox></BlurBox> */}
       <Navbar></Navbar>
+      {/* <Navvv></Navvv> */}
       {/* <Navigation /> */}
       <Hero />
       {isMobile && (
@@ -106,7 +108,7 @@ function Home() {
       {/* <CardGrid></CardGrid> */}
       {/* <FAQPage></FAQPage> */}
       {!isMobile && <Footer></Footer>}
-      {!isMobile && <BackToTopButton></BackToTopButton>}
+      <BackToTopButton></BackToTopButton>
 
       {isMobile && <Mobilefooter></Mobilefooter>}
       {/* <ServicesShowcase></ServicesShowcase> */}

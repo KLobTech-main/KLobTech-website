@@ -4,10 +4,13 @@ import pythonImg from "./Assets/python.png";
 import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import Scrolltotop from "../Components/ScrollToTop";
+import Logo from "../Components/logo";
+
 function Python() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">
