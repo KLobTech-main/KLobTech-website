@@ -2,8 +2,12 @@ import React from "react";
 import "./AboutUs.css";
 import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
+import BackToTopButton from "./BackToTopButton";
+import Mobilefooter from "./Mobilefooter";
+import { useMediaQuery } from "react-responsive";
 
 const KlobTech = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const stats = [
     { number: "3450", label: "FOLLOWERS" },
     { number: "1000+", label: "PRODUCT" },
@@ -46,6 +50,7 @@ const KlobTech = () => {
 
   return (
     <>
+      <BackToTopButton></BackToTopButton>
       <Navbar></Navbar>
       <div className="klobtech">
         {/* Hero Section */}
@@ -138,7 +143,9 @@ const KlobTech = () => {
           </div>
         </section>
       </div>
-      <Footer></Footer>
+
+      {!isMobile && <Footer></Footer>}
+      {isMobile && <Mobilefooter></Mobilefooter>}
     </>
   );
 };
