@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./AboutUs.css";
 import Navbar from "./Nav/Navbar";
 import Footer from "./Components/Footer";
@@ -7,8 +8,36 @@ import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import Logo from "./Components/logo";
 
+const AnimatedCounter = ({ targetNumber }) => {
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    const duration = 2; // animation duration in seconds
+    const interval = 10; // update interval in milliseconds
+    const increment = Math.ceil(
+      (parseInt(targetNumber, 10) / (duration * 1000)) * interval
+    );
+
+    const timer = setInterval(() => {
+      setCount((prev) => {
+        const nextValue = prev + increment;
+        if (nextValue >= parseInt(targetNumber, 10)) {
+          clearInterval(timer);
+          return targetNumber;
+        }
+        return nextValue;
+      });
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [targetNumber]);
+
+  return <span>{count}</span>;
+};
+
 const KlobTech = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   const stats = [
     { number: "3450", label: "FOLLOWERS" },
     { number: "1000+", label: "PRODUCT" },
@@ -70,14 +99,27 @@ const KlobTech = () => {
         {/* Stats Section */}
         <section className="klobtech__stats">
           <div className="klobtech__container">
-            <div className="klobtech__stats-grid">
+            <motion.div
+              className="klobtech__stats-grid"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               {stats.map((stat, index) => (
-                <div key={index} className="klobtech__stats-item">
-                  <h3 className="klobtech__stats-number">{stat.number}</h3>
+                <motion.div
+                  key={index}
+                  className="klobtech__stats-item"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+                  <h3 className="klobtech__stats-number">
+                    <AnimatedCounter targetNumber={stat.number} />
+                  </h3>
                   <p>{stat.label}</p>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 

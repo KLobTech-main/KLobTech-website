@@ -19,9 +19,9 @@ function Information() {
           </h1> */}
           <h1>
             <span style={{ color: "var(--accent-color)" }}>KLob</span>Tech
-            KLobTech stands at the forefront of technological innovation, driven
-            by a highly skilled and dedicated IT team. We specialize in
-            full-stack development and mobile app solutions to craft seamless,
+            stands at the forefront of technological innovation, driven by a
+            highly skilled and dedicated IT team. We specialize in full-stack
+            development and mobile app solutions to craft seamless,
             high-performance applications. Our commitment to cutting-edge
             technology and precision ensures transformative digital solutions
             tailored to your unique needs. In addition, we provide high-quality
