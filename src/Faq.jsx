@@ -68,6 +68,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
 
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <BackToTopButton></BackToTopButton>
       {/* <Logo></Logo> */}
       <Navbar></Navbar>

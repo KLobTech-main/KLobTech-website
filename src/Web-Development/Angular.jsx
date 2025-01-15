@@ -11,6 +11,7 @@ function Angular() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <BackToTopButton></BackToTopButton>
       <BackToTopButton></BackToTopButton>
       {!isMobile && <Logo></Logo>}

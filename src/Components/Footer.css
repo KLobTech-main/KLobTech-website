@@ -89,10 +89,14 @@
   padding-left: 55%;
   /* background-color: red; */
 }
+
 .subHeader {
   font-size: 3rem;
   color: GREY;
   font-weight: 500;
+}
+.numbers a {
+  font-size: 2rem !important;
 }
 #footer p {
   color: #fff;
@@ -117,4 +121,5 @@
 }
 .footerBottom p {
   color: #fff;
+  font-size: 1.5rem !important;
 }

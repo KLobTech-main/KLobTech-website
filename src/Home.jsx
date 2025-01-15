@@ -24,6 +24,7 @@ import Logo from "./Components/logo";
 import Mobilefooter from "./Mobilefooter";
 import ServicesShowcase from "./ServicesShowcase";
 import Navvv from "./NewNav";
+import ServiceCards from "./Components/ServiceCards/CardComponent";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });

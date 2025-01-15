@@ -10,7 +10,6 @@ function Python() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
-      {!isMobile && <Logo></Logo>}
       <Scrolltotop></Scrolltotop>
       <Navbar></Navbar>
       <div className="serviceHero">

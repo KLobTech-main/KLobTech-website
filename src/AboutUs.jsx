@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import BackToTopButton from "./BackToTopButton";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
+import Logo from "./Components/logo";
 
 const KlobTech = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -50,6 +51,7 @@ const KlobTech = () => {
 
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <BackToTopButton></BackToTopButton>
       <Navbar></Navbar>
       <div className="klobtech">

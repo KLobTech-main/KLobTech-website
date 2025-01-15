@@ -150,7 +150,7 @@ function Footer() {
           </div>
         </div>
         <div className="footerBottom">
-          <p>© KLobTech Pvt Ltd.All Rights Reserved</p>
+          <p>© KLobTech. All Rights Reserved</p>
         </div>
       </motion.div>
     </>

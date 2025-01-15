@@ -20,6 +20,7 @@ function FullStackDevelopment() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      {!isMobile && <Logo></Logo>}
       <BackToTopButton></BackToTopButton>
       {!isMobile && <Logo></Logo>}
       <Scrolltotop></Scrolltotop>
