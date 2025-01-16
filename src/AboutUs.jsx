@@ -42,10 +42,10 @@ const KlobTech = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const stats = [
-    { number: "3450", label: "FOLLOWERS" },
+    { number: "3450+", label: "FOLLOWERS" },
     { number: "1000+", label: "PRODUCT" },
-    { number: "560", label: "SALES" },
-    { number: "850", label: "JOB EVENT" },
+    { number: "560+", label: "SALES" },
+    { number: "850+", label: "JOB EVENT" },
   ];
 
   const services = [
@@ -244,38 +244,6 @@ const KlobTech = () => {
             </div>
           </div>
         </section>
-
-        {/* Project Section */}
-        <div>
-          <h2 className="klobtech__section-title">MY PROJECTS</h2>
-          <div className="klobtech__projects-grid klobtech__projects">
-            {projects.map((project) => (
-              <a
-                key={project.id}
-                href={project.link}
-                className="klobtech__projects-item-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="klobtech__projects-item">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="klobtech__projects-image"
-                  />
-                  <div className="klobtech__projects-content">
-                    <h3 className="klobtech__projects-title">
-                      {project.title}
-                    </h3>
-                    <p className="klobtech__projects-description">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
 
       {!isMobile && <Footer></Footer>}
