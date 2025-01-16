@@ -7,6 +7,8 @@ import BackToTopButton from "./BackToTopButton";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import Logo from "./Components/logo";
+import imgAbout from "./assets/stockAbout.jpg";
+import imgMission from "./assets/stockMission.jpg";
 
 const AnimatedCounter = ({ targetNumber }) => {
   const [count, setCount] = React.useState(0);
@@ -124,33 +126,43 @@ const KlobTech = () => {
         </section>
 
         {/* About Section */}
+
         <section className="klobtech__about">
           <div className="klobtech__container">
-            <div className="klobtech__about-grid">
-              <div>
-                <h2 className="klobtech__section-title">ABOUT US</h2>
-                <p>
-                  KLobTech, Your top-tier Mobile and Web App Development Company
-                  in India. We excel in technological expertise, customizing
-                  solutions for your brand's online dominance. Innovation meets
-                  proficiency, making us your key to a standout digital
-                  identity.
-                </p>
-              </div>
-              <div>
-                <h2 className="klobtech__section-title">VISION & MISSION</h2>
-                <p>
-                  KLobTech envisions being your key to success, providing
-                  top-notch software and web services with a focus on quality
-                  and efficiency.
-                </p>
+            {/* ABOUT US */}
+            <h2 className="klobtech__section-title">ABOUT US</h2>
+            <div className="klobtech__about-item">
+              <img
+                src={imgAbout}
+                alt="About Us"
+                className="klobtech__about-image"
+              />
+              <p className="klobtech__about-text">
+                KLobTech, your top-tier Mobile and Web App Development Company
+                in India. We excel in technological expertise, customizing
+                solutions for your brand's online dominance. Innovation meets
+                proficiency, making us your key to a standout digital identity.
+              </p>
+            </div>
+
+            {/* VISION AND MISSION */}
+            <h2 className="klobtech__section-title">VISION & MISSION</h2>
+            <div className="klobtech__about-item klobtech__about-reverse">
+              <img
+                src={imgMission}
+                alt="Vision and Mission"
+                className="klobtech__about-image"
+              />
+              <p className="klobtech__about-text">
+                KLobTech envisions being your key to success, providing
+                top-notch software and web services with a focus on quality and
+                efficiency.
                 <br />
-                <p>
-                  Our mission is to consistently exceed your expectations,
-                  empowering our team to deliver superior performance and
-                  accelerate your business's pace.
-                </p>
-              </div>
+                <br />
+                Our mission is to consistently exceed your expectations,
+                empowering our team to deliver superior performance and
+                accelerate your business's pace.
+              </p>
             </div>
           </div>
         </section>
