@@ -5,6 +5,7 @@ import SubMenu from "./SubMenu";
 import MobileMenu from "./MobileMenu";
 import { servicesData } from "./serviceData";
 import "./Navbar.css";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const {
@@ -22,7 +23,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-content">
+        <div className="navbar-content flex justify-between items-center h-[80px]">
+          {/* Mobile Logo on the far left */}
+          <div className="mobile-logo-container flex-shrink-0 absolute left-10 top-1/2 transform -translate-y-1/2">
+            <img
+              src={logo}
+              alt="Logo"
+              className="mobile-logo w-16 h-auto" // Increased logo size
+            />
+          </div>
+
+          {/* Desktop Navigation */}
           <div className="desktop-navigation">
             <div className="desktop-nav-items">
               <Link to="/" className="nav-link">
@@ -72,7 +83,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Menu Button */}
           <div className="mobile-menu-toggle">
             <button onClick={toggleMobileMenu} className="mobile-menu-button">
               <span className="screen-reader-text">Open main menu</span>

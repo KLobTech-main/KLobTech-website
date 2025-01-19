@@ -24,6 +24,8 @@ import Logo from "./Components/logo";
 import Mobilefooter from "./Mobilefooter";
 import ServicesShowcase from "./ServicesShowcase";
 import Navvv from "./NewNav";
+import ServiceList from "./Components/MobileServices/ServiceList";
+import MobServices from "./MobServices";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -97,7 +99,9 @@ function Home() {
         speed2={5} // Speed of the second circle (slower)
       /> */}
       <Information></Information>
-      <Services></Services>
+
+      {!isMobile && <Services></Services>}
+      {isMobile && <MobServices></MobServices>}
       {isMobile && <ReviewCarousel></ReviewCarousel>}
 
       {/* <AnimatedNavbar></AnimatedNavbar> */}

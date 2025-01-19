@@ -5,11 +5,13 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import BackToTopButton from "./BackToTopButton";
+import Logo from "./Components/logo";
 
 function tac() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <>
+      <Logo></Logo>
       <BackToTopButton></BackToTopButton>
       <ScrollToTop></ScrollToTop>
       <Navbar></Navbar>

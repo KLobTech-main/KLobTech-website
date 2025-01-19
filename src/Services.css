@@ -309,3 +309,13 @@
   /* color: #dae8fe;
   background-color: var(--accent-color); */
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 428px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /* Styles for all iPhones in portrait mode */
+  /* .service1 {
+    background-color: red;
+  } */
+  .service1 {
+    background-color: yellow;
+  }
+}

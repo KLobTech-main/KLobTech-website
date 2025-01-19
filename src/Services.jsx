@@ -8,6 +8,7 @@ import btbsImg from "./services/assets/b2b.png";
 import recruitImg from "./services/assets/recruitment.png";
 import ecommerceImg from "./services/assets/ecommerce.png";
 import educationImg from "./services/assets/education.png";
+
 function Services() {
   return (
     <>
