@@ -6,6 +6,7 @@ import MobileMenu from "./MobileMenu";
 import { servicesData } from "./serviceData";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
+import { useMediaQuery } from "react-responsive";
 
 const Navbar = () => {
   const {
@@ -19,19 +20,21 @@ const Navbar = () => {
     handleMobileSubmenuClick,
     toggleMobileMenu,
   } = useDropdownState();
-
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-content flex justify-between items-center h-[80px]">
           {/* Mobile Logo on the far left */}
-          <div className="mobile-logo-container flex-shrink-0 absolute left-10 top-1/2 transform -translate-y-1/2">
-            <img
-              src={logo}
-              alt="Logo"
-              className="mobile-logo w-16 h-auto" // Increased logo size
-            />
-          </div>
+          {isMobile && (
+            <div className="mobile-logo-container flex-shrink-0 absolute left-10 top-1/2 transform -translate-y-1/2">
+              <img
+                src={logo}
+                alt="Logo"
+                className="mobile-logo w-16 h-auto" // Increased logo size
+              />
+            </div>
+          )}
 
           {/* Desktop Navigation */}
           <div className="desktop-navigation">
