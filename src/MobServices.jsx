@@ -24,7 +24,7 @@ const services = [
   },
   {
     id: 3,
-    image: "/path/to/image3.png",
+    image: "/digital.png",
     title: "Digital Marketing",
     link: "/digitalmarketing",
   },

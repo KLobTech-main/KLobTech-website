@@ -45,7 +45,6 @@ import ContactUs from "./ContactUs";
 import Tac from "./tac";
 import Career from "./Career/Career";
 import AboutUs from "./AboutUs";
-import Test from "./Test";
 
 function App() {
   return (
@@ -90,7 +89,6 @@ function App() {
           <Route path="/services/Mce" element={<Mce />} />
           <Route path="/services/Rs" element={<Rs />} />
           <Route path="/services/Ps" element={<Ps />} />
-          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
     </>
