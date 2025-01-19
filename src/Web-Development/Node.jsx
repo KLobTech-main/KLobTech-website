@@ -9,124 +9,173 @@ import BackToTopButton from "../BackToTopButton";
 
 function Node() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const services = [
+    {
+      title: "Custom Node.js App Development",
+      description:
+        "Unlock the full potential of custom Node.js app development with KLobTech. Our skilled Node.js developers specialize in creating bespoke web and mobile applications that address your unique business requirements.",
+    },
+    {
+      title: "Node.js Web Development",
+      description:
+        "Enhance your online presence with our premium Node.js web development services. We integrate modern features and robust security standards, ensuring your digital footprint is secure and high-performing.",
+    },
+    {
+      title: "Real-Time Apps Development",
+      description:
+        "Create dynamic, real-time web applications with our Node.js expertise. Whether it's single-page applications (SPAs), collaboration tools, or chat apps, we deliver solutions tailored to your business needs.",
+    },
+    {
+      title: "API Development and Integration",
+      description:
+        "Our experienced Node.js developers craft powerful, feature-rich APIs and provide seamless integration with other systems. We ensure your APIs are reliable and fit perfectly with your business processes.",
+    },
+    {
+      title: "Node.js Migration Services",
+      description:
+        "Planning to migrate your application or website to Node.js? We provide smooth and efficient migration services, ensuring a hassle-free transition with minimal disruption to your operations.",
+    },
+    {
+      title: "Node.js Plugin Development",
+      description:
+        "We develop custom, feature-rich Node.js plugins that integrate seamlessly with your web or mobile application, enhancing its functionality and performance for your business success.",
+    },
+  ];
+
   return (
     <>
-      {!isMobile && <Logo></Logo>}
-      <BackToTopButton></BackToTopButton>
-      {!isMobile && <Logo></Logo>}
-      <Scrolltotop></Scrolltotop>
-      <Navbar></Navbar>
-      <div className="serviceHero">
-        <div>
-          <img src={nodeImg} alt="" />
-        </div>
-        <div className="heroInfo">
-          <div className="heroTitleArea">
-            <h1 className="heroTitle">Node JS Development</h1>
+      {/* Desktop View */}
+      {!isMobile && (
+        <>
+          <Logo />
+          <BackToTopButton />
+          <Scrolltotop />
+          <Navbar />
+
+          <div className="serviceHero">
+            <div>
+              <img
+                src={nodeImg}
+                alt="Node.js Development"
+                className="serviceHeroImg"
+                style={{
+                  width: "100%",
+                  maxHeight: "500px",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className="heroInfo">
+              <div className="heroTitleArea">
+                <h1 className="heroTitle">Node JS Development</h1>
+              </div>
+
+              <p className="heroDescription">
+                Upgrade your digital solutions with KLobTech, a leading Node.js
+                development company. Our expert Node.js developers work closely
+                with you to understand your business needs, delivering robust,
+                scalable, and modern web and mobile applications. By partnering
+                with our skilled team, you gain enhanced scalability, improved
+                productivity, and long-term value for your web and app
+                solutions. Choose KLobTech for tailored, high-quality
+                development services that drive business success.
+              </p>
+            </div>
           </div>
 
-          <p className="heroDescription">
-            Upgrade your digital solutions with KLobTech, a leading Node.js
-            development company. Our expert Node.js developers work closely with
-            you to understand your business needs, delivering robust, scalable,
-            and modern web and mobile applications. By partnering with our
-            skilled team, you gain enhanced scalability, improved productivity,
-            and long-term value for your web and app solutions. Choose KLobTech
-            for tailored, high-quality development services that drive business
-            success.
-          </p>
-        </div>
-      </div>
+          <div className="mobileServiceGridContainer">
+            <div className="serviceGridTitleContainer">
+              <p className="serviceTitle">
+                Why Choose KLobTech for Node JS Development?
+              </p>
+            </div>
+            <div className="gridArea">
+              {services.map((service, index) => (
+                <div className="appService" key={index}>
+                  <div className="appServiceTitleArea">
+                    <p>{service.title}</p>
+                  </div>
+                  <div className="appServiceDescriptionArea">
+                    <p className="appServiceDescription">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-      <div className="mobileServiceGridContainer">
-        <div className="serviceGridTitleContainer">
-          <p className="serviceTitle">
-            Why Choose KLobTech for Node JS Development?
-          </p>
-        </div>
-        <div className="gridArea">
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Custom Node.js App Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Unlock the full potential of custom Node.js app development with
-                KLobTech. Our skilled Node.js developers specialize in creating
-                bespoke web and mobile applications that address your unique
-                business requirements.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Node.js Web Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Enhance your online presence with our premium Node.js web
-                development services. We integrate modern features and robust
-                security standards, ensuring your digital footprint is secure
-                and high-performing.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Real-Time Apps Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Create dynamic, real-time web applications with our Node.js
-                expertise. Whether it's single-page applications (SPAs),
-                collaboration tools, or chat apps, we deliver solutions tailored
-                to your business needs.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>API Development and Integration</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Our experienced Node.js developers craft powerful, feature-rich
-                APIs and provide seamless integration with other systems. We
-                ensure your APIs are reliable and fit perfectly with your
-                business processes.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Node.js Migration Services</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Planning to migrate your application or website to Node.js? We
-                provide smooth and efficient migration services, ensuring a
-                hassle-free transition with minimal disruption to your
-                operations.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Node.js Plugin Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                We develop custom, feature-rich Node.js plugins that integrate
-                seamlessly with your web or mobile application, enhancing its
-                functionality and performance for your business success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          <Footer />
+        </>
+      )}
 
-      {isMobile && <Mobilefooter></Mobilefooter>}
-      {!isMobile && <Footer></Footer>}
+      {/* Mobile View */}
+      {isMobile && (
+        <div className="font-sans">
+          {/* Mobile Navbar */}
+          <Navbar />
+
+          {/* Hero Section */}
+          <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
+            <div className="flex flex-col items-center gap-6">
+              <div className="w-40 h-40">
+                <img
+                  src={nodeImg}
+                  alt="Node.js Development"
+                  className="mobileHeroImg"
+                  style={{
+                    width: "120px",
+                    height: "120px",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                  <span className="text-[#333333]">Node JS Development</span>
+                </h1>
+                <p className="text-2xl md:text-xl text-gray-600 max-w-3xl mx-auto leading-normal text-justify px-10">
+                  Upgrade your digital solutions with KLobTech, a leading
+                  Node.js development company. Our expert Node.js developers
+                  work closely with you to understand your business needs,
+                  delivering robust, scalable, and modern web and mobile
+                  applications. By partnering with our skilled team, you gain
+                  enhanced scalability, improved productivity, and long-term
+                  value for your web and app solutions. Choose KLobTech for
+                  tailored, high-quality development services that drive
+                  business success.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Services Section */}
+          <section className="py-12 px-4 bg-white">
+            <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+              Why Choose <span className="text-teal-500">KLobTech</span> for
+              Node JS Development?
+            </h2>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+                >
+                  <h3 className="text-2xl md:text-3xl font-semibold text-teal-500 mb-4 border-b-4 border-teal-500 inline-block pb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <Mobilefooter />
+        </div>
+      )}
     </>
   );
 }

@@ -8,117 +8,164 @@ import Logo from "../Components/logo";
 
 function Wordpress() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const services = [
+    {
+      title: "WordPress Development",
+      description:
+        "At KLobTech, we create custom WordPress solutions tailored to your unique business needs, helping you connect with your audience and achieve success.",
+    },
+    {
+      title: "Theme Development",
+      description:
+        "Our developers specialize in designing and customizing WordPress themes that reflect your brand’s identity, providing a polished, user-friendly experience.",
+    },
+    {
+      title: "Custom Plugin Development",
+      description:
+        "KLobTech offers customized WordPress plugin development to enhance your website’s functionality, improve operations, and engage users more effectively.",
+    },
+    {
+      title: "WooCommerce Development",
+      description:
+        "Our WooCommerce development services focus on creating custom solutions that optimize your store’s features and improve customer engagement for better e-commerce performance.",
+    },
+    {
+      title: "Website Maintenance",
+      description:
+        "We provide ongoing maintenance and support for WordPress websites, ensuring your site stays secure, up-to-date, and fully functional. Our team is always available to address issues promptly and implement the latest updates for optimal performance.",
+    },
+    {
+      title: "WordPress SEO Optimization",
+      description:
+        "Increase visibility and drive more traffic with KLobTech’s WordPress SEO services, designed to improve rankings and boost conversions.",
+    },
+  ];
+
   return (
     <>
-      {!isMobile && <Logo></Logo>}
-      <ScrollToTop></ScrollToTop>
-      <Navbar></Navbar>
-      <div className="serviceHero">
-        <div>
-          <img style={{ height: "40rem" }} src={wordpressImg} alt="" />
-        </div>
-        <div className="heroInfo">
-          <div className="heroTitleArea">
-            <h1 className="heroTitle">Wordpress Services</h1>
+      {/* Desktop View */}
+      {!isMobile && (
+        <>
+          <Logo />
+          <ScrollToTop />
+          <Navbar />
+
+          <div className="serviceHero">
+            <div>
+              <img
+                style={{ height: "40rem", width: "100%", objectFit: "cover" }}
+                src={wordpressImg}
+                alt="WordPress Development"
+              />
+            </div>
+            <div className="heroInfo">
+              <div className="heroTitleArea">
+                <h1 className="heroTitle">WordPress Services</h1>
+              </div>
+
+              <p className="heroDescription">
+                At KLobTech, we specialize in building custom WordPress
+                websites, plugins, and themes tailored to meet your business's
+                specific needs. With our extensive expertise, we create
+                functional and impactful websites for a wide range of
+                industries. Let us help you unlock your online potential with
+                our bespoke WordPress development services. Contact us today to
+                start your journey toward success!
+              </p>
+            </div>
           </div>
 
-          <p className="heroDescription">
-            At KLobTech, we specialize in building custom WordPress websites,
-            plugins, and themes tailored to meet your business's specific needs.
-            With our extensive expertise, we create functional and impactful
-            websites for a wide range of industries. Let us help you unlock your
-            online potential with our bespoke WordPress development services.
-            Contact us today to start your journey toward success!
-          </p>
-        </div>
-      </div>
+          <div className="mobileServiceGridContainer">
+            <div className="serviceGridTitleContainer">
+              <p className="serviceTitle">
+                Why Choose KLobTech for WordPress Development?
+              </p>
+            </div>
+            <div className="gridArea">
+              {services.map((service, index) => (
+                <div className="appService" key={index}>
+                  <div className="appServiceTitleArea">
+                    <p>{service.title}</p>
+                  </div>
+                  <div className="appServiceDescriptionArea">
+                    <p className="appServiceDescription">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-      <div className="mobileServiceGridContainer">
-        <div className="serviceGridTitleContainer">
-          <p className="serviceTitle">
-            Why Choose KLobTech for Wordpress Development?
-          </p>
-        </div>
-        <div className="gridArea">
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>WordPress Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                At KLobTech, we create custom WordPress solutions tailored to
-                your unique business needs, helping you connect with your
-                audience and achieve success.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Theme Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Our developers specialize in designing and customizing WordPress
-                themes that reflect your brand’s identity, providing a polished,
-                user-friendly experience.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Custom Plugin Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                KLobTech offers customized WordPress plugin development to
-                enhance your website’s functionality, improve operations, and
-                engage users more effectively.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>WooCommerce Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Our WooCommerce development services focus on creating custom
-                solutions that optimize your store’s features and improve
-                customer engagement for better e-commerce performance.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Website Maintenance</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                We provide ongoing maintenance and support for WordPress
-                websites, ensuring your site stays secure, up-to-date, and fully
-                functional. Our team is always available to address issues
-                promptly and implement the latest updates for optimal
-                performance.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>WordPress SEO Optimization</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Increase visibility and drive more traffic with KLobTech’s
-                WordPress SEO services, designed to improve rankings and boost
-                conversions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+          <Footer />
+        </>
+      )}
 
-      {isMobile && <Mobilefooter></Mobilefooter>}
-      {!isMobile && <Footer></Footer>}
+      {/* Mobile View */}
+      {isMobile && (
+        <div className="font-sans">
+          {/* Mobile Navbar */}
+          <Navbar />
+
+          {/* Hero Section */}
+          <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
+            <div className="flex flex-col items-center gap-6">
+              <div className="w-40 h-40">
+                <img
+                  src={wordpressImg}
+                  alt="WordPress Development"
+                  className="mobileHeroImg"
+                  style={{
+                    width: "120px",
+                    height: "120px",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                  <span className="text-[#333333]">WordPress Services</span>
+                </h1>
+                <p className="text-2xl md:text-xl text-gray-600 max-w-3xl mx-auto leading-normal text-justify px-10">
+                  At KLobTech, we specialize in building custom WordPress
+                  websites, plugins, and themes tailored to meet your business's
+                  specific needs. With our extensive expertise, we create
+                  functional and impactful websites for a wide range of
+                  industries. Let us help you unlock your online potential with
+                  our bespoke WordPress development services. Contact us today
+                  to start your journey toward success!
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Services Section */}
+          <section className="py-12 px-4 bg-white">
+            <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+              Why Choose <span className="text-teal-500">KLobTech</span> for
+              WordPress Development?
+            </h2>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+                >
+                  <h3 className="text-2xl md:text-3xl font-semibold text-teal-500 mb-4 border-b-4 border-teal-500 inline-block pb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <Mobilefooter />
+        </div>
+      )}
     </>
   );
 }

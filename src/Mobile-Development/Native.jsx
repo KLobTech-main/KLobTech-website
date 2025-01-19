@@ -9,125 +9,164 @@ import BackToTopButton from "../BackToTopButton";
 
 function Native() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const features = [
+    {
+      title: "App Strategy Consultation",
+      description:
+        "Kickstart your app journey with expert guidance. We develop a clear, actionable plan that aligns with your business objectives and market opportunities, ensuring your success from day one.",
+    },
+    {
+      title: "Custom App Development",
+      description:
+        "Transform your ideas into reality with bespoke Android app development. Our solutions are designed to provide seamless performance, innovative features, and a superior user experience.",
+    },
+    {
+      title: "Engaging UI/UX Design",
+      description:
+        "Create stunning, intuitive designs that captivate users. We focus on user-centric interfaces that offer both style and functionality, ensuring your app stands out in a competitive market.",
+    },
+    {
+      title: "App Enhancement Services",
+      description:
+        "Boost your app’s performance with our upgrade and extension services. We add new features and improve functionality to ensure your app evolves with market trends and user needs.",
+    },
+    {
+      title: "Seamless App Integration",
+      description:
+        "Automate processes and improve efficiency by integrating AI-powered features into your Android app. Our seamless integrations enhance functionality and streamline operations effortlessly.",
+    },
+    {
+      title: "Reliable Support Services",
+      description:
+        "At KLobTech, we go beyond development by offering dedicated maintenance and support. Keep your Android app running smoothly with regular updates, feature enhancements, and expert assistance.",
+    },
+  ];
+
   return (
     <>
-      {!isMobile && <Logo></Logo>}
-      <BackToTopButton></BackToTopButton>
-      {!isMobile && <Logo></Logo>}
-      <Scrolltotop></Scrolltotop>
-      <Navbar></Navbar>
-      <div className="serviceHero">
-        <div>
-          <img src={nativeImg} alt="" />
-        </div>
-        <div className="heroInfo">
-          <div className="heroTitleArea">
-            <h1 className="heroTitle">Native Android Development</h1>
-          </div>
+      {/* Desktop View */}
+      {!isMobile && (
+        <>
+          <Logo />
+          <BackToTopButton />
+          <Scrolltotop />
+          <Navbar />
 
-          <p className="heroDescription">
-            Unlock the potential of your business with KLobTech’s premier
-            Android app development services. We deliver tailored,
-            high-performance solutions that align with your goals. Whether
-            you're a startup aiming to make an impact or an established
-            enterprise seeking growth, our expert team is here to transform your
-            vision into reality. Join our valued clients who trust us to elevate
-            their brand. Ready to create an innovative Android app that drives
-            success? Your journey starts with KLobTech!
-          </p>
-        </div>
-      </div>
+          {/* Hero Section */}
+          <div className="serviceHero">
+            <div>
+              <img src={nativeImg} alt="Native Android Development" />
+            </div>
+            <div className="heroInfo">
+              <div className="heroTitleArea">
+                <h1 className="heroTitle">Native Android Development</h1>
+              </div>
 
-      <div className="mobileServiceGridContainer">
-        <div className="serviceGridTitleContainer">
-          <p className="serviceTitle">
-            Why Choose KLobTech for Native Android Development?
-          </p>
-        </div>
-        <div className="gridArea">
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>App Strategy Consultation</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Kickstart your app journey with expert guidance. We develop a
-                clear, actionable plan that aligns with your business objectives
-                and market opportunities, ensuring your success from day one.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Custom App Development</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Transform your ideas into reality with bespoke Android app
-                development. Our solutions are designed to provide seamless
-                performance, innovative features, and a superior user
-                experience.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Engaging UI/UX Design</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Create stunning, intuitive designs that captivate users. We
-                focus on user-centric interfaces that offer both style and
-                functionality, ensuring your app stands out in a competitive
-                market.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>App Enhancement Services</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Boost your app’s performance with our upgrade and extension
-                services. We add new features and improve functionality to
-                ensure your app evolves with market trends and user needs.
-              </p>
-            </div>
-          </div>
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Seamless App Integration</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                Automate processes and improve efficiency by integrating
-                AI-powered features into your Android app. Our seamless
-                integrations enhance functionality and streamline operations
-                effortlessly.
+              <p className="heroDescription">
+                Unlock the potential of your business with KLobTech’s premier
+                Android app development services. We deliver tailored,
+                high-performance solutions that align with your goals. Whether
+                you're a startup aiming to make an impact or an established
+                enterprise seeking growth, our expert team is here to transform
+                your vision into reality. Join our valued clients who trust us
+                to elevate their brand. Ready to create an innovative Android
+                app that drives success? Your journey starts with KLobTech!
               </p>
             </div>
           </div>
 
-          <div className="appService">
-            <div className="appServiceTitleArea">
-              <p>Reliable Support Services</p>
-            </div>
-            <div className="appServiceDescriptionArea">
-              <p className="appServiceDescription">
-                At KLobTech, we go beyond development by offering dedicated
-                maintenance and support. Keep your Flutter app running smoothly
-                with regular updates, feature enhancements, and expert
-                assistance.
+          {/* Features Section */}
+          <div className="mobileServiceGridContainer">
+            <div className="serviceGridTitleContainer">
+              <p className="serviceTitle">
+                Why Choose KLobTech for Native Android Development?
               </p>
             </div>
+            <div className="gridArea">
+              {features.map((feature, index) => (
+                <div className="appService" key={index}>
+                  <div className="appServiceTitleArea">
+                    <p>{feature.title}</p>
+                  </div>
+                  <div className="appServiceDescriptionArea">
+                    <p className="appServiceDescription">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </div>
 
-      {isMobile && <Mobilefooter></Mobilefooter>}
-      {!isMobile && <Footer></Footer>}
+          <Footer />
+        </>
+      )}
+
+      {/* Mobile View */}
+      {isMobile && (
+        <div className="font-sans">
+          {/* Mobile Navbar */}
+          <Navbar />
+
+          {/* Hero Section */}
+          <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
+            <div className="flex flex-col items-center gap-6">
+              <div className="w-48 h-48">
+                <img
+                  src={nativeImg}
+                  alt="Mobile App Icon"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                  <span className="text-[#333333]">
+                    Native Android Development
+                  </span>
+                </h1>
+                <p className="text-2xl md:text-xl text-gray-600 max-w-3xl mx-auto leading-normal text-justify px-10">
+                  Unlock the potential of your business with KLobTech’s premier
+                  Android app development services. We deliver tailored,
+                  high-performance solutions that align with your goals. Whether
+                  you're a startup aiming to make an impact or an established
+                  enterprise seeking growth, our expert team is here to
+                  transform your vision into reality. Join our valued clients
+                  who trust us to elevate their brand. Ready to create an
+                  innovative Android app that drives success? Your journey
+                  starts with KLobTech!
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Features Section */}
+          <section className="py-12 px-4 bg-white">
+            <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+              Why Choose <span className="text-teal-500">KLobTech</span> for
+              Native Android Development?
+            </h2>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+                >
+                  <h3 className="text-2xl md:text-3xl font-semibold text-teal-500 mb-4 border-b-4 border-teal-500 inline-block pb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <Mobilefooter />
+        </div>
+      )}
     </>
   );
 }
+
 export default Native;
