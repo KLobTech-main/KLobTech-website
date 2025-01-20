@@ -12,7 +12,7 @@ import BackToTopButton from "../BackToTopButton";
 function Digitalmarketing() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
-  const services = [
+  const features = [
     {
       title: "SEO Optimization",
       description:
@@ -88,7 +88,7 @@ function Digitalmarketing() {
               </p>
             </div>
             <div className="gridArea">
-              {services.map((service, index) => (
+              {features.map((service, index) => (
                 <div className="appService" key={index}>
                   <div className="appServiceTitleArea">
                     <p>{service.title}</p>
@@ -112,7 +112,8 @@ function Digitalmarketing() {
         <div className="font-sans">
           {/* Mobile Navbar */}
           <Navbar />
-
+          <BackToTopButton />
+          <ScrollToTop />
           {/* Hero Section */}
           <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
             <div className="flex flex-col items-center gap-6">
@@ -147,16 +148,16 @@ function Digitalmarketing() {
               Digital Marketing?
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
-              {services.map((service, index) => (
+              {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+                  className="bg-gradient-to-br from-white to-gray-50 pt-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
                 >
-                  <h3 className="text-2xl md:text-3xl font-semibold text-teal-500 mb-4 border-b-4 border-teal-500 inline-block pb-2">
-                    {service.title}
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[#333333] mb-4 border-b-4 border-teal-500 inline-block pb-2 w-full rounded-3xl">
+                    {feature.title}
                   </h3>
-                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify">
-                    {service.description}
+                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify px-8 py-6 pb-8">
+                    {feature.description}
                   </p>
                 </div>
               ))}

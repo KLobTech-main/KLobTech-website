@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useDropdownState } from "./useDropdownState";
 import SubMenu from "./SubMenu";
 import MobileMenu from "./MobileMenu";
@@ -20,29 +20,55 @@ const Navbar = () => {
     handleMobileSubmenuClick,
     toggleMobileMenu,
   } = useDropdownState();
+
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const location = useLocation();
+
+  // Close the menu when the Home button is clicked while already on the homepage
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      toggleMobileMenu(); // Close the mobile menu if we're on the home page
+    }
+  };
+
+  // Close dropdown when any nav item except 'services' is clicked
+  const handleNavClick = () => {
+    if (activeMenu !== "services") {
+      toggleMobileMenu(); // Close the mobile menu
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-content flex justify-between items-center h-[80px]">
           {/* Mobile Logo on the far left */}
-          {isMobile && (
-            <div className="mobile-logo-container flex-shrink-0 absolute left-10 top-1/2 transform -translate-y-1/2">
-              <img
-                src={logo}
-                alt="Logo"
-                className="mobile-logo w-16 h-auto" // Increased logo size
-              />
-            </div>
-          )}
+          <Link to="/">
+            {isMobile && (
+              <div className="mobile-logo-container flex-shrink-0 absolute left-10 top-1/2 transform -translate-y-1/2">
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="mobile-logo w-16 h-auto" // Increased logo size
+                />
+              </div>
+            )}
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="desktop-navigation">
             <div className="desktop-nav-items">
-              <Link to="/" className="nav-link">
+              <Link
+                to="/"
+                className="nav-link"
+                onClick={() => {
+                  handleHomeClick();
+                  handleNavClick();
+                }}
+              >
                 Home
               </Link>
-              <Link to="/about" className="nav-link">
+              <Link to="/about" className="nav-link" onClick={handleNavClick}>
                 About
               </Link>
               <div className="services-dropdown" onMouseLeave={handleMenuLeave}>
@@ -66,6 +92,7 @@ const Navbar = () => {
                         <Link
                           to={service.path}
                           className="services-dropdown-link"
+                          onClick={handleNavClick} // Keep the dropdown open for services
                         >
                           {service.name}
                         </Link>
@@ -77,10 +104,10 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              <Link to="/faq" className="nav-link">
+              <Link to="/faq" className="nav-link" onClick={handleNavClick}>
                 FAQ
               </Link>
-              <Link to="/contact" className="nav-link">
+              <Link to="/contact" className="nav-link" onClick={handleNavClick}>
                 Contact
               </Link>
             </div>

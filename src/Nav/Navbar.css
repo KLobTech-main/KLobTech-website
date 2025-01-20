@@ -34,7 +34,9 @@
   .navbar-container {
     justify-content: right;
     padding-right: 5rem;
-    height: 5.5rem;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 .navbar-content {
@@ -184,16 +186,18 @@
   justify-content: space-between;
 }
 
+/* Mobile menu icon lines */
 .menu-icon-line {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: currentColor;
+  background-color: var(--accent-color);
   transition: all 0.3s ease;
 }
 
+/* When the mobile menu is open, animate the lines into a cross */
 .menu-icon-line.rotate-down {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(10px, 10px);
 }
 
 .menu-icon-line.hide {
@@ -202,6 +206,12 @@
 
 .menu-icon-line.rotate-up {
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Ensure both lines hide and animate into a complete cross */
+.menu-icon-line.rotate-up,
+.menu-icon-line.rotate-down {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 @keyframes fadeIn {

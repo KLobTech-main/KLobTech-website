@@ -98,6 +98,8 @@ function React() {
       {isMobile && (
         <div className="font-sans">
           {/* Hero Section */}
+          <BackToTopButton />
+          <Scrolltotop />
           <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
             <div className="flex flex-col items-center gap-6">
               {/* Increase image size for mobile and avoid cropping */}
@@ -129,19 +131,19 @@ function React() {
           {/* Features Section */}
           <section className="py-12 px-4 bg-white">
             <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
-              Why Choose <span className="text-teal-500">KLobTech</span> for
+              Why Choose <span className="text-teal-500">KLob</span>Tech for
               Mobile App Development?
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+                  className="bg-gradient-to-br from-white to-gray-50 pt-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
                 >
-                  <h3 className="text-2xl md:text-3xl font-semibold text-teal-500 mb-4 border-b-4 border-teal-500 inline-block pb-2">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[#333333] mb-4 border-b-4 border-teal-500 inline-block pb-2 w-full rounded-3xl">
                     {feature.title}
                   </h3>
-                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify">
+                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify px-8 py-6 pb-8">
                     {feature.description}
                   </p>
                 </div>
