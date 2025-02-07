@@ -40,7 +40,6 @@ import Wordpress from "./CMSService/Wordpress";
 import Ecommerce from "./services/Ecommerce";
 import Education from "./services/Education";
 import Digitalmarketing from "./digitalmarketing/Digitalmarketing";
-import Development from "./Development";
 import ContactUs from "./ContactUs";
 import Tac from "./tac";
 import Career from "./Career/Career";

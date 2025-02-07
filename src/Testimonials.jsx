@@ -38,13 +38,13 @@ const Reviews = () => {
   return (
     <section className="reviews-section">
       <h2 className="reviews-heading">
-        Here's what <span style={{ color: "var(--accent-color)" }}>others</span>{" "}
+        Here&apos;s what <span style={{ color: "var(--accent-color)" }}>others</span>{" "}
         say about us
       </h2>
       <div className="reviews-container">
         {reviews.map((review, index) => (
           <div className="review-card" key={index}>
-            <p className="review-feedback">"{review.feedback}"</p>
+            <p className="review-feedback">&quot;{review.feedback}&quot;</p>
             <h3 className="review-name">{review.name}</h3>
             <p className="review-role">{review.role}</p>
           </div>

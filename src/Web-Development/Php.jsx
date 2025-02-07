@@ -90,7 +90,7 @@ function Php() {
               </p>
             </div>
             <div className="gridArea">
-              {services.map((service, index) => (
+              {features.map((service, index) => (
                 <div className="appService" key={index}>
                   <div className="appServiceTitleArea">
                     <p>{service.title}</p>

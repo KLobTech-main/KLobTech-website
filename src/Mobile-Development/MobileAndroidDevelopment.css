@@ -4,8 +4,9 @@
   align-items: center;
   margin: 0 auto;
   width: 90%;
-  height: 80vh;
-  /* background-color: #fbfbfb; */
+  min-height: 80vh;
+  height: auto; /* Adjust dynamically */
+    /* background-color: #fbfbfb; */
   gap: 3rem;
   /* margin-bottom: 7rem; */
   border-radius: 3rem;

@@ -1,6 +1,5 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Nav/Navbar";
-import { Link, Outlet } from "react-router-dom";
 import digitalImg from "./assets/digital.png";
 import ScrollToTop from "../Components/ScrollToTop";
 import Mobilefooter from "../Mobilefooter";
