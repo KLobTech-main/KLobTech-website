@@ -59,7 +59,7 @@ const ServicePanel = () => {
           <Link to={service.link} key={service.id} className="group">
             {/* Link wrapper around card */}
             <div
-              className="bg-[#f5f5f7] rounded-[3rem] flex flex-col items-center justify-between px-6 py-10 w-[230px] h-[270px] shadow-sm 
+              className="bg-[#f5f5f7] rounded-[3rem] flex flex-col items-center justify-between px-6 py-10 w-[330px] h-[270px] shadow-sm 
               transition-transform duration-300 group-hover:shadow-xl group-hover:scale-105 transform hover:scale-105"
             >
               <img
