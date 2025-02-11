@@ -15,6 +15,25 @@
   margin-bottom: 7rem;
   background: rgba(244, 244, 244, 0.404);
 }
+.typing-text {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 .infoTextArea {
   display: flex;

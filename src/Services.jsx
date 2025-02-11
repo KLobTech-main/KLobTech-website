@@ -22,9 +22,15 @@ function Services() {
         </div>
         <div className="serviceArea">
           <Link to="/mad">
-            <div className="service service1">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service1"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">
@@ -50,12 +56,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/fullStackDevelopment">
-            <div className="service service2">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="web.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service2"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">
@@ -81,12 +93,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/digitalmarketing">
-            <div className="service service3">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service3"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle unevenCardTitles">
@@ -112,12 +130,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/cms">
-            <div className="service service4">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service4"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">CMS Services</p>
@@ -141,12 +165,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/btbs">
-            <div className="service service5">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service5"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">B2B Services</p>
@@ -170,12 +200,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/recruitment">
-            <div className="service service6">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service6"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">
@@ -201,12 +237,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/ecommerce">
-            <div className="service service7">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service7"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">Ecommerce</p>
@@ -230,12 +272,18 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
           <Link to="/education">
-            <div className="service service8">
-              <div style={{ opacity: "0" }} className="iconArea">
-                <img src="coding.png" alt="" />
+            <motion.div
+              initial={{ opacity: 0, y: 250 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="service service8"
+            >
+              <div className="iconArea">
+                <img src="" alt="" />
               </div>
               <div className="nameArea">
                 <p className="serviceCardTitle cardTitle">Education</p>
@@ -259,188 +307,8 @@ function Services() {
                   Learn More
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </Link>
-
-          {/* <div className="service service2">
-            <div className="iconArea">
-              <img src="web.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle">Full Stack Development</p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Fsd"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="service service3">
-            <div className="iconArea">
-              <img src="aiml.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle">AI/ML Development</p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Amd"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="service service4">
-            <div className="iconArea">
-              <img src="b2b.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle">B2B Services</p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Btbs"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="service service5">
-            <div className="iconArea">
-              <img src="recruit.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle title5">Recruitment Services</p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Lgsa"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="service service6">
-            <div className="iconArea">
-              <img src="online.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle">Ecommerce</p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Mce"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="service service7">
-            <div className="iconArea">
-              <img src="edu.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle">
-                <p>Education</p>
-              </p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Rs"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="service service8">
-            <div className="iconArea">
-              <img src="web.png" alt="" />
-            </div>
-            <div className="nameArea">
-              <p className="cardTitle">Service 8</p>
-              <a
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "var(--accent-color)",
-                  color: "#fff",
-                  textDecoration: "none",
-                  borderRadius: "2rem",
-                  border: "none",
-                }}
-                href="./services/Ps"
-                className="learnService"
-              >
-                Learn More
-              </a>
-            </div>
-          </div> */}
-        </div>
-        <div className="contactHeading">
-          Have something else in your mind? Reach out to us.
-          <a
-            href="mailto:info@klobtech.com?subject=Inquiry&body=Hello, I would like to know more about..."
-            className="contactButton"
-          >
-            Click Me
-          </a>
         </div>
       </div>
     </>

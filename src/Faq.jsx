@@ -84,7 +84,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
                 <div key={index} className="faq-item">
                   <div
                     onClick={() => toggleFAQ(index)}
-                    className={`faq-question transition-all duration-300 ${
+                    className={`faq-question transition-all duration-500 ease-in-out ${
                       activeIndex === index ? accentClass : ""
                     }`}
                   >
@@ -92,7 +92,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
                     <span>{activeIndex === index ? "−" : "+"}</span>
                   </div>
 
-                  <div
+                 <div
                   className={`transition-all duration-500 ease-in-out overflow-hidden ${
                     activeIndex === index ? "max-h-[200px] opacity-100 p-4 bg-gray-50" : "max-h-0 opacity-0"
                   }`}
