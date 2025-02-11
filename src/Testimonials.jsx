@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "./Testimonials.css";
 
 const reviews = [
@@ -37,15 +38,22 @@ const Reviews = () => {
   return (
     <section className="reviews-section">
       <h2 className="reviews-heading">
-        Here&apos;s what <span className="highlight">others</span> say about us
+        Here's what <span className="highlight">others</span> say about us
       </h2>
       <div className="reviews-container">
         {reviews.map((review, index) => (
-          <div className="review-card" key={index}>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="review-card"
+            key={index}
+          >
             <p className="review-feedback">&quot;{review.feedback}&quot;</p>
             <h3 className="review-name">{review.name}</h3>
             <p className="review-role">{review.role}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

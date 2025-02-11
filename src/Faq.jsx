@@ -70,7 +70,6 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
     <>
       {!isMobile && <Logo></Logo>}
       <BackToTopButton></BackToTopButton>
-      {/* <Logo></Logo> */}
       <Navbar></Navbar>
       <div className="faq-page-container">
         <div className="faq-card">
@@ -85,7 +84,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
                 <div key={index} className="faq-item">
                   <div
                     onClick={() => toggleFAQ(index)}
-                    className={`faq-question ${
+                    className={`faq-question transition-all duration-500 ease-in-out ${
                       activeIndex === index ? accentClass : ""
                     }`}
                   >
@@ -93,12 +92,12 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
                     <span>{activeIndex === index ? "−" : "+"}</span>
                   </div>
 
-                  <div
-                    className={`faq-answer ${
-                      activeIndex === index ? "visible" : "hidden"
-                    }`}
-                  >
-                    {faq.answer}
+                 <div
+                  className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                    activeIndex === index ? "max-h-[200px] opacity-100 p-4 bg-gray-50" : "max-h-0 opacity-0"
+                  }`}
+                >
+                    <div className="faq-answer-content">{faq.answer}</div>
                   </div>
                 </div>
               ))}
