@@ -3,69 +3,100 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 60px 30px;
   background-color: #f9f9f9;
   text-align: center;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  width: 160rem;
-  height: 80rem;
-  /* background-color: yellow; */
-  gap: 10rem;
-  margin-bottom: 5rem;
+  gap: 3rem;
 }
 
 .reviews-heading {
-  font-size: 8rem;
+  font-size: 4rem;
   margin-bottom: 20px;
   color: #333;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--accent-color);
 }
 
 .reviews-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 10rem;
-  column-gap: 20rem;
-  /* background-color: var(--accent-color); */
-  backdrop-filter: blur(35px);
-  -webkit-backdrop-filter: blur(10px);
+  gap: 3rem;
+  max-width: 1400px;
 }
 
 .review-card {
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 300px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease;
-  scale: 1.6;
-  backdrop-filter: blur(35px);
-  -webkit-backdrop-filter: blur(10px);
-  transform: border ease 1s;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .review-card:hover {
-  transform: translateY(-5px);
-  border: 1px solid var(--accent-color);
+  transform: translateY(-7px);
+  border: 2px solid var(--accent-color);
 }
 
 .review-feedback {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-bottom: 15px;
-  color: #555;
+  color: #444;
 }
 
 .review-name {
   font-weight: bold;
   color: #222;
+  font-size: 2.0rem;
 }
 
 .review-role {
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .reviews-heading {
+    font-size: 3.5rem;
+  }
+
+  .reviews-container {
+    gap: 2rem;
+  }
+
+  .review-card {
+    max-width: 90%;
+    padding: 25px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-heading {
+    font-size: 4rem; /* Change from 3rem or 3.5rem */
+  }
+  
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    max-width: 400px; /* Increase from 300px */
+    padding: 30px; /* Increase padding for a larger appearance */
+    font-size: 1.2rem;
+  }
 }

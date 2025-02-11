@@ -1,36 +1,35 @@
-import React from "react";
-import "./Testimonials.css"; // Add styles in this file
+import "./Testimonials.css";
 
 const reviews = [
   {
-    name: "John Doe",
+    name: "Travis Barker",
     role: "CEO, TechCorp",
     feedback:
-      "The IT solutions provided by KLobTech have transformed our operations. Excellent service!",
+      "This company provided outstanding IT support for our business. Their work in cloud computing and cybersecurity made a huge difference. The team was responsive and professional throughout the process. Highly recommended!",
   },
   {
-    name: "Jane Smith",
+    name: "Ethan Reynolds",
     role: "HR Manager, Innovate Solutions",
     feedback:
-      "Their recruitment services helped us find top talent quickly. Truly a reliable partner!",
+      "Their approach to software development is top-notch. They understood our business needs and provided an innovative solution. Communication was smooth, and deadlines were always met. A reliable IT partner!",
   },
   {
-    name: "Alice Brown",
-    role: "Founder, StartupHub",
+    name: "Sophia Müller",
+    role: "Vice President, StartupHub",
     feedback:
-      "The IT solutions provided by KLobTech have transformed our operations. Excellent service!",
+      "We needed a custom software solution, and they delivered beyond expectations. Their developers are highly skilled and always open to feedback. The final product was smooth, user-friendly, and exactly what we wanted.",
   },
   {
-    name: "Alice Brown",
-    role: "Founder, StartupHub",
+    name: "Sam Bobley",
+    role: "Founder, Optomi",
     feedback:
-      "The IT solutions provided by KLobTech have transformed our operations. Excellent service!",
+      "Exceptional service! The IT consultants were knowledgeable and helped us optimize our infrastructure. Our system runs faster and more efficiently now. We will definitely work with them again in the future.",
   },
   {
-    name: "Alice Brown",
-    role: "Founder, StartupHub",
+    name: "Olivia Carter",
+    role: "CEO, Ocrolus",
     feedback:
-      "The IT solutions provided by KLobTech have transformed our operations. Excellent service!",
+      "We had an issue with our database management, and their team fixed it in no time. They also provided excellent training for our staff to prevent future issues. Very professional and great at what they do!",
   },
 ];
 
@@ -38,8 +37,7 @@ const Reviews = () => {
   return (
     <section className="reviews-section">
       <h2 className="reviews-heading">
-        Here&apos;s what <span style={{ color: "var(--accent-color)" }}>others</span>{" "}
-        say about us
+        Here&apos;s what <span className="highlight">others</span> say about us
       </h2>
       <div className="reviews-container">
         {reviews.map((review, index) => (
