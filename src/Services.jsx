@@ -53,7 +53,7 @@ function Services() {
                   to="/mad"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -90,7 +90,7 @@ function Services() {
                   to="/fullStackDevelopment"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -127,7 +127,7 @@ function Services() {
                   to="/digitalmarketing"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -162,7 +162,7 @@ function Services() {
                   to="/cms"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -197,7 +197,7 @@ function Services() {
                   to="/btbs"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -234,7 +234,7 @@ function Services() {
                   to="/recruitment"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -269,7 +269,7 @@ function Services() {
                   to="/ecommerce"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
@@ -304,7 +304,7 @@ function Services() {
                   to="/education"
                   className="learnService"
                 >
-                  Learn More
+                  Explore More
                 </Link>
               </div>
             </motion.div>
