@@ -1,8 +1,7 @@
+
 import Navigation from "./Navigation";
 import Hero from "./Hero";
 import Circle from "./Circle";
-// import CircleMotion from "./CircleMotion";
-// import RevolvingCircle from "./RevolvingCircle";
 import MainCircle from "./Orbit";
 import Information from "./Information";
 import Services from "./Services";
@@ -10,7 +9,6 @@ import ServicesTest from "./ServicesTest";
 import BlurBox from "./BlurBox";
 import CursorFollower from "./CursorFollower";
 import Testimonials from "./Testimonials";
-// import Navbar from "./StaffingSolutions";
 import Faq from "./Faq";
 import Footer from "./Components/Footer";
 import FAQPage from "./Faq";
@@ -26,15 +24,29 @@ import ServicesShowcase from "./ServicesShowcase";
 import Navvv from "./NewNav";
 import ServiceList from "./Components/MobileServices/ServiceList";
 import MobServices from "./MobServices";
+import { motion } from "framer-motion";
 
 function Home() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
     <>
-      {!isMobile && <Logo></Logo>}
-
+      {/* Logo Section */}
       {!isMobile && (
-        <Circle top={"15rem"} left={"-10rem"} color={"#333"} scale={1} />
+        <div
+        >
+          <Logo />
+        </div>
+      )}
+
+      {/* Circle Animations */}
+      {!isMobile && (
+        <Circle
+          top={"15rem"}
+          left={"-10rem"}
+          color={"#333"}
+          scale={1}
+        />
       )}
 
       {!isMobile && (
@@ -47,18 +59,30 @@ function Home() {
       )}
 
       {!isMobile && (
-        <Circle top={"80rem"} left={"20rem"} color={"#333"} scale={1} />
+        <Circle
+          top={"80rem"}
+          left={"20rem"}
+          color={"#333"}
+          scale={1}
+        />
       )}
 
       {isMobile && (
-        <Circle top={"52rem"} left={"20rem"} color={"#333"} scale={0.6} />
+        <Circle
+          top={"52rem"}
+          left={"20rem"}
+          color={"#333"}
+          scale={0.6}
+        />
       )}
 
-      {/* <BlurBox></BlurBox> */}
-      <Navbar></Navbar>
-      {/* <Navvv></Navvv> */}
-      {/* <Navigation /> */}
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Hero Section */}
       <Hero />
+
+      {/* Main Circle Animation */}
       {isMobile && (
         <MainCircle
           mainRadius={160}
@@ -74,6 +98,7 @@ function Home() {
           color2={"var(--accent-color)"}
         />
       )}
+
       {!isMobile && (
         <MainCircle
           mainRadius={500}
@@ -89,33 +114,56 @@ function Home() {
           color2={"var(--accent-color)"}
         />
       )}
-      {/* <MainCircle
-        mainRadius={500}
-        childRadius1={20}
-        childRadius2={80}
-        distance1={650}
-        distance2={550}
-        speed1={9} // Speed of the first circle (faster)
-        speed2={5} // Speed of the second circle (slower)
-      /> */}
-      <Information></Information>
 
-      {!isMobile && <Services></Services>}
-      {isMobile && <MobServices></MobServices>}
-      {isMobile && <ReviewCarousel></ReviewCarousel>}
+      {/* Information Section */}
+      <Information />
 
-      {/* <AnimatedNavbar></AnimatedNavbar> */}
-      {/* <Review></Review> */}
-      {/* <ReviewCarousel></ReviewCarousel> */}
-      {!isMobile && <Testimonials></Testimonials>}
+      {/* Services Section */}
+      {!isMobile && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <Services />
+        </motion.div>
+      )}
 
-      {/* <CardGrid></CardGrid> */}
-      {/* <FAQPage></FAQPage> */}
-      {!isMobile && <Footer></Footer>}
-      <BackToTopButton></BackToTopButton>
+      {isMobile && <MobServices />}
 
-      {isMobile && <Mobilefooter></Mobilefooter>}
-      {/* <ServicesShowcase></ServicesShowcase> */}
+      {/* Review Carousel */}
+      {isMobile && <ReviewCarousel />}
+
+      {/* Testimonials Section */}
+      {!isMobile && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <Testimonials />
+        </motion.div>
+      )}
+
+      {/* Footer Section */}
+      {!isMobile && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
+          <Footer />
+        </motion.div>
+      )}
+
+      {/* Back To Top Button */}
+      <BackToTopButton />
+
+      {/* Mobile Footer */}
+      {isMobile && <Mobilefooter />}
     </>
   );
 }

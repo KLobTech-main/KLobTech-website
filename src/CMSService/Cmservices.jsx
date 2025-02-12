@@ -1,3 +1,5 @@
+
+import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
 import Navbar from "../Nav/Navbar";
 import { Link } from "react-router-dom";
@@ -8,9 +10,9 @@ import Mobilefooter from "../Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import ScrollToTop from "../Components/ScrollToTop";
 import Logo from "../Components/logo";
+import BackToTopButton from "../BackToTopButton";
 
 import "../index.css";
-import BackToTopButton from "../BackToTopButton";
 
 function Cms() {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -66,13 +68,22 @@ function Cms() {
       {/* Desktop View */}
       {!isMobile && (
         <>
-          <Logo />
+          <div
+          >
+            <Logo />
+          </div>
+          <BackToTopButton />
           <ScrollToTop />
-          <BackToTopButton></BackToTopButton>
           <Navbar />
 
           {/* Hero Section */}
-          <div className="serviceHero">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="serviceHero"
+          >
             <div>
               <img style={{ height: "40rem" }} src={herocmsImg} alt="" />
             </div>
@@ -90,10 +101,16 @@ function Cms() {
                 to enhance engagement and performance.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Service Features */}
-          <div className="mobileServiceGridContainer">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="mobileServiceGridContainer"
+          >
             <div className="serviceGridTitleContainer">
               <p className="serviceTitle">
                 Why Choose KLobTech for CMS Services?
@@ -101,7 +118,14 @@ function Cms() {
             </div>
             <div className="gridArea">
               {services.map((service, index) => (
-                <div className="appService" key={index}>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="appService"
+                >
                   <div className="appServiceTitleArea">
                     <p>{service.title}</p>
                   </div>
@@ -110,13 +134,19 @@ function Cms() {
                       {service.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Technologies Section */}
-          <div className="mobileImageGridContainer">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="mobileImageGridContainer"
+          >
             <div className="gridTitleArea">
               <p className="mobileGridTitle">
                 We Specialize in the Following Technologies
@@ -125,7 +155,13 @@ function Cms() {
             <div className="mobileGridArea">
               {technologies.map((tech, index) => (
                 <Link key={index} to={tech.link}>
-                  <div className="mobileImageService">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    className="mobileImageService"
+                  >
                     <div className="mobileImageTitleArea">
                       <p style={{ fontSize: "3rem", fontWeight: "500" }}>
                         {tech.title}
@@ -134,13 +170,20 @@ function Cms() {
                     <div className="mobileServiceImage">
                       <img src={tech.image} alt={tech.title} />
                     </div>
-                  </div>
+                  </motion.div>
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <Footer />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            <Footer />
+          </motion.div>
         </>
       )}
 
@@ -150,16 +193,22 @@ function Cms() {
           {/* Mobile Navbar */}
           <Navbar />
           <ScrollToTop />
-          <BackToTopButton></BackToTopButton>
+          <BackToTopButton />
 
           {/* Hero Section */}
-          <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8"
+          >
             <div className="flex flex-col items-center gap-6">
               <div className="w-48 h-48">
                 <img
                   src={herocmsImg}
                   alt="CMS Services"
-                  className="mobileHeroImg" // This class can be defined to increase the size if needed
+                  className="mobileHeroImg"
                 />
               </div>
               <div>
@@ -176,65 +225,87 @@ function Cms() {
                 </p>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Service Features */}
-          <section className="py-12 px-4 bg-white">
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="py-12 px-4 bg-white"
+          >
             <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
               Why Choose <span className="text-teal-500">KLobTech</span> for CMS
               Services?
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
               {services.map((service, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="bg-gradient-to-br from-white to-gray-50 pt-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
-                >
-                  <h3 className="text-2xl md:text-3xl font-semibold text-[#333333] mb-4 border-b-4 border-teal-500 inline-block pb-2 w-full rounded-3xl">
-                    {service.title}
-                  </h3>
-                  <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify px-8 py-6 pb-8">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Technologies Section */}
-          <div className="px-4 py-12 bg-gray-50">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-gray-800">
-                We Specialize in the Following Technologies
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[50%] mx-auto">
-              {technologies.map((tech, index) => (
-                <Link
-                  key={index}
-                  to={tech.link}
-                  className="group bg-white shadow-lg hover:shadow-xl hover:scale-110 transition-transform duration-300 rounded-xl p-8 text-center"
-                >
-                  <div className="flex items-center justify-center mb-6">
-                    <img
-                      src={tech.image}
-                      alt={tech.title}
-                      className="w-24 h-24 sm:w-28 sm:h-28 object-contain rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 group-hover:text-teal-600">
-                    {tech.title}
-                  </h3>
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <Mobilefooter />
-        </div>
-      )}
-    </>
-  );
-}
-
-export default Cms;
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                 className="bg-gradient-to-br from-white to-gray-50 pt-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
+                                  >
+                                    <h3 className="text-2xl md:text-3xl font-semibold text-[#333333] mb-4 border-b-4 border-teal-500 inline-block pb-2 w-full rounded-3xl">
+                                      {service.title}
+                                    </h3>
+                                    <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify px-8 py-6 pb-8">
+                                      {service.description}
+                                    </p>
+                                  </motion.div>
+                                ))}
+                              </div>
+                            </motion.section>
+                  
+                            {/* Technologies Section */}
+                            <motion.div
+                              initial={{ opacity: 0, y: 50 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 1 }}
+                              className="px-4 py-12 bg-gray-50"
+                            >
+                              <div className="text-center mb-10">
+                                <h2 className="text-3xl font-bold text-gray-800">
+                                  We Specialize in the Following Technologies
+                                </h2>
+                              </div>
+                              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[50%] mx-auto">
+                                {technologies.map((tech, index) => (
+                                  <Link
+                                    key={index}
+                                    to={tech.link}
+                                    className="group bg-white shadow-lg hover:shadow-xl hover:scale-110 transition-transform duration-300 rounded-xl p-8 text-center"
+                                  >
+                                    <motion.div
+                                      initial={{ opacity: 0, y: 20 }}
+                                      whileInView={{ opacity: 1, y: 0 }}
+                                      viewport={{ once: true }}
+                                      transition={{ duration: 0.5, delay: index * 0.2 }}
+                                      className="flex items-center justify-center mb-6"
+                                    >
+                                      <img
+                                        src={tech.image}
+                                        alt={tech.title}
+                                        className="w-24 h-24 sm:w-28 sm:h-28 object-contain rounded-lg"
+                                      />
+                                    </motion.div>
+                                    <h3 className="text-xl font-semibold text-gray-800 group-hover:text-teal-600">
+                                      {tech.title}
+                                    </h3>
+                                  </Link>
+                                ))}
+                              </div>
+                            </motion.div>
+                  
+                            <Mobilefooter />
+                          </div>
+                        )}
+                      </>
+                    );
+                  }
+                  
+                  export default Cms;

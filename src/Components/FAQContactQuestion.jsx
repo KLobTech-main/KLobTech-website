@@ -1,18 +1,26 @@
+
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const FAQContactQuestion = () => {
   const [question, setQuestion] = useState("");
-  const companyEmail = "info@klobtech.com"; // Replace with your company email
+  const companyEmail = "info@klobtech.com"; 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const encodedQuestion = encodeURIComponent(question);
     window.location.href = `mailto:${companyEmail}?subject=FAQ Question&body=${encodedQuestion}`;
-    setQuestion(""); // Clear the textbox
+    setQuestion(""); 
   };
 
   return (
-    <div className="w-full bg-white p-12 shadow-xl">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      className="w-full bg-white p-12 shadow-xl"
+    >
       <div className="max-w-5xl mx-auto">
         <div className="mb-16">
           <h2 className="text-6xl font-bold text-center text-gray-800">
@@ -33,9 +41,11 @@ const FAQContactQuestion = () => {
           </div>
 
           <div className="flex justify-center">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.1, backgroundColor: "#099381" }}
+              transition={{ duration: 0.2 }}
               type="submit"
-              className="bg-[#25ccb6] text-white px-12 py-8 rounded-2xl text-3xl font-medium flex items-center justify-center gap-4 hover:bg-[#099381] transition-all duration-200 hover:scale-105"
+              className="bg-[#25ccb6] text-white px-12 py-8 rounded-2xl text-3xl font-medium flex items-center justify-center gap-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,14 +62,12 @@ const FAQContactQuestion = () => {
                 />
               </svg>
               Send Question
-            </button>
+            </motion.button>
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 export default FAQContactQuestion;
-
-// Contact us and let’s work together for success!

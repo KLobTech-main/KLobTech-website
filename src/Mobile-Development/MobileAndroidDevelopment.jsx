@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Navbar from "../Nav/Navbar";
 import Footer from "../Components/Footer";
 import reactImg from "./assets/react.png";
@@ -75,13 +76,23 @@ function Mad() {
       {/* Desktop View */}
       {!isMobile && (
         <>
-          <Logo />
+          <div
+           
+          >
+            <Logo />
+          </div>
           <BackToTopButton />
           <Scrolltotop />
           <Navbar />
 
           {/* Hero Section */}
-          <div className="serviceHero">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="serviceHero"
+          >
             <div>
               <img src={mobileIMG} alt="React JS" />
             </div>
@@ -99,10 +110,16 @@ function Mad() {
                 into seamless digital experiences.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Service Features */}
-          <div className="mobileServiceGridContainer">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="mobileServiceGridContainer"
+          >
             <div className="serviceGridTitleContainer">
               <p className="serviceTitle">
                 Why Choose KLobTech for Mobile App Development?
@@ -110,7 +127,14 @@ function Mad() {
             </div>
             <div className="gridArea">
               {features.map((service, index) => (
-                <div className="appService" key={index}>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="appService"
+                >
                   <div className="appServiceTitleArea">
                     <p>{service.title}</p>
                   </div>
@@ -119,78 +143,57 @@ function Mad() {
                       {service.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <div className="mobileImageGridContainer">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="mobileImageGridContainer"
+          >
             <div className="gridTitleArea">
               <p className="mobileGridTitle">
                 We Specialize in the Following Technologies
               </p>
             </div>
             <div className="mobileGridArea">
-              <Link to="/mad/react">
-                <div className="mobileImageService">
-                  <div className="mobileImageTitleArea">
-                    <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                      React Native
-                    </p>{" "}
-                  </div>
-                  <div className="mobileServiceImage">
-                    <Link to="/mad/react">
-                      <img src={reactImg} alt="" />
-                    </Link>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/mad/flutter">
-                <div className="mobileImageService">
-                  <div className="mobileImageTitleArea">
-                    <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                      Flutter
-                    </p>{" "}
-                  </div>
-                  <div className="mobileServiceImage">
-                    <Link to="/mad/flutter">
-                      <img src={flutterImg} alt="" />
-                    </Link>
-                  </div>
-                </div>
-              </Link>
-
-              <Link to="/mad/android">
-                <div className="mobileImageService">
-                  <div className="mobileImageTitleArea">
-                    <p style={{ fontSize: "3rem", fontWeight: "500" }}>
-                      Android
-                    </p>{" "}
-                  </div>
-                  <div className="mobileServiceImage">
-                    <Link to="/mad/android">
-                      <img src={androidImg} alt="" />
-                    </Link>
-                  </div>
-                </div>
-              </Link>
-              <Link to="/mad/ios">
-                <div className="mobileImageService">
-                  <div className="mobileImageTitleArea">
-                    <p style={{ fontSize: "3rem", fontWeight: "500" }}>iOS</p>{" "}
-                  </div>
-                  <div className="mobileServiceImage">
-                    <Link to="/mad/ios">
-                      <img src={appleImg} alt="" />
-                    </Link>
-                  </div>
-                </div>
-              </Link>
+              {technologies.map((tech, index) => (
+                <Link to={tech.link} key={index}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    className="mobileImageService"
+                  >
+                    <div className="mobileImageTitleArea">
+                      <p style={{ fontSize: "3rem", fontWeight: "500" }}>
+                        {tech.title}
+                      </p>{" "}
+                    </div>
+                    <div className="mobileServiceImage">
+                      <Link to={tech.link}>
+                        <img src={tech.image} alt="" />
+                      </Link>
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
             </div>
-          </div>
+          </motion.div>
 
-          <Footer />
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            <Footer />
+          </motion.div>
         </>
       )}
 
@@ -203,7 +206,13 @@ function Mad() {
           <Scrolltotop />
 
           {/* Hero Section */}
-          <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8"
+          >
             <div className="flex flex-col items-center gap-6">
               <div className="w-48 h-48">
                 <img
@@ -229,18 +238,28 @@ function Mad() {
                 </p>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Service Features */}
-          <section className="py-12 px-4 bg-white">
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="py-12 px-4 bg-white"
+          >
             <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
               Why Choose <span className="text-teal-500">KLobTech</span> for
               React JS Development?
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
               {features.map((feature, index) => (
-                <div
+                <motion.div
                   key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   className="bg-gradient-to-br from-white to-gray-50 pt-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
                 >
                   <h3 className="text-2xl md:text-3xl font-semibold text-[#333333] mb-4 border-b-4 border-teal-500 inline-block pb-2 w-full rounded-3xl">
@@ -249,12 +268,19 @@ function Mad() {
                   <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify px-8 py-6 pb-8">
                     {feature.description}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </section>
+          </motion.section>
+
           {/* Service Technologies */}
-          <div className="px-4 py-12 bg-gray-50">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="px-4 py-12 bg-gray-50"
+          >
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-gray-800">
                 We Specialize in the Following Technologies
@@ -280,7 +306,7 @@ function Mad() {
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           <Mobilefooter />
         </div>

@@ -1,3 +1,5 @@
+
+import { motion } from "framer-motion";
 import Footer from "../Components/Footer";
 import Navbar from "../Nav/Navbar";
 import { Link } from "react-router-dom";
@@ -90,13 +92,22 @@ function FullStackDevelopment() {
       {/* Desktop View */}
       {!isMobile && (
         <>
-          <Logo />
+          <div
+          >
+            <Logo />
+          </div>
           <BackToTopButton />
           <Scrolltotop />
           <Navbar />
 
           {/* Hero Section */}
-          <div className="serviceHero">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="serviceHero"
+          >
             <div>
               <img src={webdevImg} alt="Web Development" />
             </div>
@@ -113,10 +124,16 @@ function FullStackDevelopment() {
                 development services.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Service Features */}
-          <div className="mobileServiceGridContainer">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="mobileServiceGridContainer"
+          >
             <div className="serviceGridTitleContainer">
               <p className="serviceTitle">
                 Why Choose KLobTech for Full Stack Development?
@@ -124,7 +141,14 @@ function FullStackDevelopment() {
             </div>
             <div className="gridArea">
               {services.map((service, index) => (
-                <div className="appService" key={index}>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="appService"
+                >
                   <div className="appServiceTitleArea">
                     <p>{service.title}</p>
                   </div>
@@ -133,37 +157,60 @@ function FullStackDevelopment() {
                       {service.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Technologies Grid */}
-          <div className="webImageGridContainer">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            
+            className="mobileImageGridContainer !h-[950px] bg-gray-50" // This class can be defined to increase the height if needed
+          >
             <div className="gridTitleArea">
               <p className="mobileGridTitle">
                 We Specialize in the Following Technologies
               </p>
             </div>
-            <div className="extraMobileGridArea">
+            <div className="mobileGridArea">
               {technologies.map((tech, index) => (
-                <Link key={index} to={tech.link}>
-                  <div className="mobileImageService">
+                <Link to={tech.link} key={index}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                    className="mobileImageService"
+                  >
                     <div className="mobileImageTitleArea">
                       <p style={{ fontSize: "3rem", fontWeight: "500" }}>
                         {tech.title}
-                      </p>
+                      </p>{" "}
                     </div>
                     <div className="mobileServiceImage">
-                      <img src={tech.image} alt={tech.title} />
+                      <Link to={tech.link}>
+                        <img src={tech.image} alt="" />
+                      </Link>
                     </div>
-                  </div>
+                  </motion.div>
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          <Footer />
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            <Footer />
+          </motion.div>
         </>
       )}
 
@@ -176,7 +223,13 @@ function FullStackDevelopment() {
           <Scrolltotop />
 
           {/* Hero Section */}
-          <section className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8">
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="py-12 px-4 text-center bg-[#f3f3f3] rounded-3xl mx-8"
+          >
             <div className="flex flex-col items-center gap-6">
               <div className="w-48 h-48">
                 <img
@@ -199,18 +252,28 @@ function FullStackDevelopment() {
                 </p>
               </div>
             </div>
-          </section>
+          </motion.section>
 
           {/* Service Features */}
-          <section className="py-12 px-4 bg-white">
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="py-12 px-4 bg-white"
+          >
             <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-10">
               Why Choose <span className="text-teal-500">KLobTech</span> for
               Full Stack Development?
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[85%] mx-auto">
               {services.map((service, index) => (
-                <div
+                <motion.div
                   key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   className="bg-gradient-to-br from-white to-gray-50 pt-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 text-center"
                 >
                   <h3 className="text-2xl md:text-3xl font-semibold text-[#333333] mb-4 border-b-4 border-teal-500 inline-block pb-2 w-full rounded-3xl">
@@ -219,39 +282,45 @@ function FullStackDevelopment() {
                   <p className="text-xl md:text-xl text-gray-600 leading-relaxed text-justify px-8 py-6 pb-8">
                     {service.description}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </section>
+          </motion.section>
 
           {/* Service Technologies */}
-          <div className="px-4 py-12 bg-gray-50">
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="px-4 py-12 bg-gray-50"
+         >
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-gray-800">
                 We Specialize in the Following Technologies
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[50%] mx-auto">
+            < div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[50%] mx-auto">
               {technologies.map((tech, index) => (
                 <Link
                   key={index}
                   to={tech.link}
                   className="group bg-white shadow-lg hover:shadow-xl hover:scale-110 transition-transform duration-300 rounded-xl p-8 text-center"
                 >
-                  <div className="flex items-center justify-center mb-6">
+                  <motion.div className="flex items-center justify-center mb-6">
                     <img
                       src={tech.image}
                       alt={tech.title}
                       className="w-24 h-24 sm:w-28 sm:h-28 object-contain rounded-lg"
                     />
-                  </div>
+                  </motion.div>
                   <h3 className="text-xl font-semibold text-gray-800 group-hover:text-teal-600">
                     {tech.title}
                   </h3>
                 </Link>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Mobile Footer */}
           <Mobilefooter />

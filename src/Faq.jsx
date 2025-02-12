@@ -8,7 +8,7 @@ import FAQContact from "./Components/FAQContact";
 import Mobilefooter from "./Mobilefooter";
 import { useMediaQuery } from "react-responsive";
 import BackToTopButton from "./BackToTopButton";
-
+import {motion} from 'framer-motion';
 const FAQPage = ({ accentColor = "#0dc7ae" }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
   const [activeIndex, setActiveIndex] = useState(null);
@@ -72,17 +72,21 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
       <BackToTopButton></BackToTopButton>
       <Navbar></Navbar>
       <div className="faq-page-container">
-        <div className="faq-card">
+        <motion.div  initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+       className="faq-card">
           <div className="image-section">
             <img src={faqImg} alt="FAQ Illustration" className="faq-image" />
           </div>
           <div className="faq-section">
-            <h1 className="faq-title">Frequently Asked Questions</h1>
+            <motion.h1 className="faq-title">Frequently Asked Questions</motion.h1>
 
             <div className="faq-list">
               {faqs.map((faq, index) => (
-                <div key={index} className="faq-item">
-                  <div
+                <div  key={index} className="faq-item">
+                  <div  
                     onClick={() => toggleFAQ(index)}
                     className={`faq-question transition-all duration-500 ease-in-out ${
                       activeIndex === index ? accentClass : ""
@@ -92,7 +96,8 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
                     <span>{activeIndex === index ? "−" : "+"}</span>
                   </div>
 
-                 <div
+                 <div  
+                 
                   className={`transition-all duration-500 ease-in-out overflow-hidden ${
                     activeIndex === index ? "max-h-[200px] opacity-100 p-4 bg-gray-50" : "max-h-0 opacity-0"
                   }`}
@@ -103,7 +108,7 @@ const FAQPage = ({ accentColor = "#0dc7ae" }) => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <FAQContact></FAQContact>
       {!isMobile && <Footer></Footer>}
